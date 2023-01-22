@@ -1,0 +1,69 @@
+respawn = 3;                    //Respawn at respawn markers
+respawnOnStart = -1;	    	//Don't respawn, don't run onPlayerRespawn on start
+enableDebugConsole = 1;     	//Allows debug console for admin
+disabledAI = 1;			    	//Stop AI from filling playable roles
+allowProfileGlasses = 0;        //Stops players loading in with facewear
+//*****************************************************************************************************************
+//Disable all chat channels except GLOBAL
+disableChannels[] = {
+	{
+		0,		// channel ID
+		false,	// disable text chat
+		true	// disable voice chat
+	},
+	{ 1, true, true },{ 2, true, true },{ 3, true, true },{ 4, true, true },{ 5, true, true }
+};
+//*****************************************************************************************************************
+//Mission Details
+author			= "Mission Author";
+onLoadName		= "Mission Name";
+onLoadMission	= "";
+loadScreen		= "";
+
+//*****************************************************************************************************************
+//Corpse management 
+corpseManagerMode = 3;
+corpseRemovalMinTime = 300;
+corpseRemovalMaxTime = 1800;
+wreckManagerMode = 2;
+minPlayerDistance = 50;
+
+//*****************************************************************************************************************
+class CfgSounds {
+
+    sounds[] = {};
+
+        class intro
+        { 
+            name = "Intro";
+            sound[] = {media\sounds\intro.ogg, db+9, 1.0};
+            titles[] = {};
+        };
+
+		
+};
+//*****************************************************************************************************************
+
+
+class Extended_InitPost_EventHandlers {
+     class CAManBase {
+		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+	};
+};
+
+class CfgFunctions
+{
+	#include "INC_undercover\cfgFunctions.hpp"
+    #include "functions\cfgfunctions.hpp"
+};
+
+class CfgRemoteExec
+{
+   class Functions
+   {
+       mode = 2;
+       jip = 1;
+       #include "INC_undercover\functionsWhitelist.hpp"
+   };
+};
+//*****************************************************************************************************************
