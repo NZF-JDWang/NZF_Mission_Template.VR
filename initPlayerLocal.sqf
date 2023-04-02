@@ -35,7 +35,7 @@ params ["_unit"];
 
 _unit addEventHandler ["Killed", {
     params ["_unit"];
-    Mission_loadout = getUnitLoadout _unit;
+    Mission_loadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
 }];
 
 _unit addEventHandler ["Respawn", {

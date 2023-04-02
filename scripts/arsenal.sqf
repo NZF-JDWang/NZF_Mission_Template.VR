@@ -1396,7 +1396,7 @@ case "blackfootOperator": {
 };
 
 case "ZEUS": {
-		[_box, _uniforms + _vests + _backpacks + _headgear + _facewear + _NVGs + _ammo + _basicMedical + _advancedMedical + _pistols + _drugs + _launchers + _marksmanRifles + _machineguns + _rifles + _optics + _railAttachments + _beret +[
+		[_box, [
 
 			],false] call ace_arsenal_fnc_initBox; 
 };
