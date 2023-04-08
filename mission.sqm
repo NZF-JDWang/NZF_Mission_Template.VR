@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=102;
+		nextID=103;
 	};
 	class Camera
 	{
-		pos[]={7585.1689,14.411743,7480.125};
-		dir[]={-0.0010508699,-0.64450777,-0.76461089};
-		up[]={-0.00088587834,0.76459652,-0.6445083};
-		aside[]={-1.0000063,-1.9674977e-007,0.0013743032};
+		pos[]={7584.6104,16.860071,7481.8452};
+		dir[]={-0.01908002,-0.53808528,-0.84272313};
+		up[]={-0.012180506,0.84287602,-0.53796089};
+		aside[]={-0.99978125,4.1111434e-007,0.022639187};
 	};
 };
 binarizationWanted=0;
@@ -42,6 +42,8 @@ addons[]=
 	"ace_goggles",
 	"Markers",
 	"A3_Characters_F_AoW",
+	"acre_sys_prc117f",
+	"acre_sys_prc343",
 	"A3_Modules_F_Multiplayer",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Props_F_Enoch_Military_Camps",
@@ -51,7 +53,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=16;
+		items=18;
 		class Item0
 		{
 			className="plp_containers";
@@ -128,26 +130,40 @@ class AddonsMetaData
 		};
 		class Item12
 		{
+			className="acre_sys_prc117f";
+			name="ACRE2 - AN/PRC-117F";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
+		};
+		class Item13
+		{
+			className="acre_sys_prc343";
+			name="ACRE2 - AN/PRC-343";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
+		};
+		class Item14
+		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item15
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item16
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item17
 		{
 			className="Tier1_BettIR_cfg";
 			name="Tier1_BettIR_cfg";
@@ -191,7 +207,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -228,7 +244,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category3
 	{
 		name="Scenario";
 		class Attribute0
@@ -32206,6 +32222,25 @@ class Mission
 										typeName="U_B_ParadeUniform_01_US_decorated_F";
 										isBackpack=0;
 									};
+									class backpack
+									{
+										typeName="bc036_invisible_bergen";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="ACRE_PRC117F";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACRE_PRC343";
+												count=2;
+											};
+										};
+									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ATM_ALTIMETER";
@@ -32372,8 +32407,27 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_ParadeUniform_01_US_decorated_F";
+										typeName="U_B_ParadeUniform_01_US_F";
 										isBackpack=0;
+									};
+									class backpack
+									{
+										typeName="bc036_invisible_bergen";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="ACRE_PRC117F";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACRE_PRC343";
+												count=2;
+											};
+										};
 									};
 									map="ItemMap";
 									compass="ItemCompass";
@@ -32533,7 +32587,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7585.9609,5,7467.5239};
+				position[]={7582.6924,5,7470.2256};
 			};
 			id=197;
 			type="ModuleRespawnPosition_F";
@@ -32612,7 +32666,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7584.6309,5,7457.9429};
+				position[]={7584.6831,5,7470.2207};
 			};
 			id=205;
 			type="ModuleCurator_F";
@@ -32695,7 +32749,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7584.189,5,7457.9448};
+				position[]={7584.2412,5,7470.2227};
 			};
 			id=228;
 			type="ModuleCurator_F";
