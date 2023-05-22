@@ -1,7 +1,7 @@
 respawn = 3;                    //Respawn at respawn markers
 respawnOnStart = -1;	    	//Don't respawn, don't run onPlayerRespawn on start
 enableDebugConsole = 1;     	//Allows debug console for admin
-disabledAI = 1;			    	//Stop AI from filling playable roles
+disabledAI = 1;			//Stop AI from filling playable roles
 allowProfileGlasses = 0;        //Stops players loading in with facewear
 //*****************************************************************************************************************
 //Disable all chat channels except GLOBAL
@@ -54,7 +54,7 @@ class Extended_InitPost_EventHandlers {
 class CfgFunctions
 {
 	#include "INC_undercover\cfgFunctions.hpp"
-    #include "functions\cfgfunctions.hpp"
+   	#include "functions\cfgfunctions.hpp"
 };
 
 class CfgRemoteExec
