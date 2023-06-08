@@ -441,16 +441,21 @@ _ammo = [
 	"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red",
 	"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan",
 	"rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan_Tracer_Red",
+	"Tier1_30Rnd_762x35_300BLK_PMAG_Tan",
+	"Tier1_30Rnd_762x35_300BLK_PMAG",
+	"Tier1_30Rnd_762x35_300BLK_SMK_PMAG_Tan",
+	"Tier1_30Rnd_762x35_300BLK_SMK_PMAG",
+	"Tier1_30Rnd_762x35_300BLK_RNBT_PMAG_Tan",
+	"Tier1_30Rnd_762x35_300BLK_RNBT_PMAG",
 	"rhsusf_mag_40Rnd_46x30_AP",
 	"rhsusf_mag_40Rnd_46x30_FMJ",
 	"rhsusf_mag_40Rnd_46x30_JHP",
 	"rhsusf_5Rnd_00Buck",
 	"rhsusf_5Rnd_Slug",
-	"UK3CB_BAF_762_100Rnd",
-	"UK3CB_BAF_762_100Rnd_T",
-	"UK3CB_BAF_762_200Rnd",
-	"UK3CB_BAF_762_200Rnd_T",
-	"UK3CB_BAF_338_5Rnd",
+	"rhsusf_50Rnd_762x51_m61_ap",
+	"rhsusf_50Rnd_762x51_m62_tracer",
+	"Tier1_250Rnd_762x51_Belt_M61_AP",
+	"Tier1_250Rnd_762x51_Belt_M62_Tracer",
 	"murshun_cigs_cigpack",
 	"murshun_cigs_lighter",
 //Throwables
@@ -586,9 +591,8 @@ _pistols = [
 ];
 
 _launchers = [
-	"UK3CB_BAF_Javelin_CLU",
-	"UK3CB_BAF_Javelin_Slung_Tube",
-	"UK3CB_BAF_NLAW_Launcher",
+	"rhs_weap_fgm148",
+	"launch_NLAW_F",
 	"launch_MRAWS_green_F",
 	"MRAWS_HE_F",
 	"MRAWS_HEAT55_F",
@@ -614,16 +618,12 @@ _marksmanRifles = [
 	"tier1_leupoldm3a_adm_t2_black",
 	"rhsusf_acc_nxs_3515x50f1_md_sun",
 	"tier1_anpvs10_tan",
-	"UK3CB_BAF_L115A3_DE",
-	"uk3cb_underbarrel_acc_bipod",
-	"rksl_optic_pmii_525",
-	"rksl_optic_pmii_312",
+	"srifle_LRR_F",
 	"rhsusf_acc_nxs_3515x50f1_md_sun"
-	
 ];
 
 _machineguns = [
-	"UK3CB_BAF_L7A2",
+	"rhs_weap_m240B",
 	"Tier1_MK46_Mod1_Savit_Desert",
 	"Tier1_MK46_Mod1_Savit",
 	"Tier1_MK46_Mod1_Desert",
@@ -1223,20 +1223,20 @@ switch (_role) do {
 
 case "command": {
 		[_box, _beret + _multicamUniforms + _mcVestsLeader + _mcRadioPacks + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
-					"ACRE_PRC117F",
-					"ACRE_PRC152",
-					"ItemcTab",
-					"ACE_MX2A",
-					"ACE_Vector"
+				"ACRE_PRC117F",
+				"ACRE_PRC152",
+				"ItemcTab",
+				"ACE_MX2A",
+				"ACE_Vector"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
 case "Leader": {
 		[_box, _beret + _multicamUniforms + _mcVestsLeader + _mcRadiopacks + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
-					"ACRE_PRC152",
-					"ItemcTab",
-					"ACE_MX2A",
-					"ACE_Vector"
+				"ACRE_PRC152",
+				"ItemcTab",
+				"ACE_MX2A",
+				"ACE_Vector"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
@@ -1245,11 +1245,13 @@ case "JTAC": {
 				"ACRE_PRC117F",
 				"ACRE_PRC152",
 				"ItemcTab",
-				"UK3CB_BAF_Soflam_Laserdesignator",
+				"Laserdesignator",
 				"ACE_MX2A",
 				"ACE_Vector",
 				"B_UavTerminal",
-				"sps_black_hornet_01_Static_F"
+				"sps_black_hornet_01_Static_F",
+				"SwitchBlade_300_Tube_Desert",
+				"SwitchBlade_600_Tube_Desert"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
@@ -1286,12 +1288,12 @@ case "Machinegunner": {
 
 case "Marksman": {
 		[_box, _beret + _multicamUniforms + _mcOperatorVests + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _marksmanRifles + _railattachments + [
-					"ACE_ATragMX",
-					"ACE_Kestrel4500",
-					"ACRE_PRC152",
-					"Rangefinder",
-					"ACE_RangeCard",
-					"ACE_Tripod"
+				"ACE_ATragMX",
+				"ACE_Kestrel4500",
+				"ACRE_PRC152",
+				"Rangefinder",
+				"ACE_RangeCard",
+				"ACE_Tripod"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
@@ -1309,54 +1311,59 @@ case "Intelligence Operator": {
 
 case "Operator": {
 		[_box, _beret + _multicamUniforms + _mcOperatorVests + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _facewear + _caps + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
-
+				"B_UavTerminal",
+				"SwitchBlade_300_Tube_Desert",
+				"SwitchBlade_600_Tube_Desert"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
 case "Helicopter": {
 		[_box, _beret + _NVGS + _ammo + _basicMedical + _pistols + _railattachments +[
-					"ACRE_PRC152",
-					"USP_G3C_CU_KP_GRY",
-					"USP_G3C_CU_KP_KHK",
-					"USP_G3C_CU_KP_RGR",
-					"USP_CRYE_CPC",
-					"USP_CRYE_CPC_MCB",
-					"USP_CRYE_CPC_RGR",
-					"rhsusf_hgu56p_visor_black",
-					"rhsusf_hgu56p_visor_mask_black",
-					"rhsusf_hgu56p_visor_mask_Empire_black",
-					"rhsusf_hgu56p_visor_mask_black_skull",
-					"rhsusf_hgu56p_visor_mask_smiley",
-					"rhsusf_hgu56p_visor_tan",
-					"rhsusf_hgu56p_visor_mask_tan",
-					"rhsusf_hgu56p_visor",
-					"rhsusf_hgu56p_visor_mask",
-					"rhsusf_hgu56p_visor_mask_mo",
-					"rhsusf_hgu56p_visor_mask_skull",
-					"rhsusf_ihadss",
-					"rhsusf_weap_MP7A2",
-					"rhsusf_weap_MP7A2_desert",
-					"rhsusf_acc_t1_low"
+				"ACRE_PRC152",
+				"USP_G3C_CU_KP_GRY",
+				"USP_G3C_CU_KP_KHK",
+				"USP_G3C_CU_KP_RGR",
+				"USP_CRYE_CPC",
+				"USP_CRYE_CPC_MCB",
+				"USP_CRYE_CPC_RGR",
+				"rhsusf_hgu56p_visor_black",
+				"rhsusf_hgu56p_visor_mask_black",
+				"rhsusf_hgu56p_visor_mask_Empire_black",
+				"rhsusf_hgu56p_visor_mask_black_skull",
+				"rhsusf_hgu56p_visor_mask_smiley",
+				"rhsusf_hgu56p_visor_tan",
+				"rhsusf_hgu56p_visor_mask_tan",
+				"rhsusf_hgu56p_visor",
+				"rhsusf_hgu56p_visor_mask",
+				"rhsusf_hgu56p_visor_mask_mo",
+				"rhsusf_hgu56p_visor_mask_skull",
+				"rhsusf_ihadss",
+				"rhsusf_weap_MP7A2",
+				"rhsusf_weap_MP7A2_desert",
+				"rhsusf_acc_t1_low"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
 case "Pilot": {
 		[_box, _beret + _NVGS + _ammo + _basicMedical + _pistols +[
-					"FIR_Fighter_Pilot_Nomex",
-					"FIR_Fighter_Pilot_Nomex3",
-					"FIR_Fighter_Pilot_Nomex5",
-					"FIR_pilot_vest",
-					"ACE_NonSteerableParachute",
-					"FIR_JHMCS",
-					"FIR_JHMCS_II",
-					"FIR_JHMCS_Type2",
-					"FIR_hgu26p",
-					"FIR_hgu26p_camo",
-					"FIR_HGU33P",
-					"FIR_HGU33P_VF1",
-					"FIR_HGU33P_VF111",
-					"FIR_HGU33P_VF84",
-					"FIR_ScorpionHMCS"
+				"CSU13BPTan_Base_NG",
+				"CSU13BP_Base_NG",
+				"CSU15BPTan_Base_FG",
+				"CSU15BP_Base_FG",
+				"CMU33P",
+				"CMU33PTan",
+				"SV2B_LPU23P",
+				"SV2B_LPU36P",
+				"ACE_NonSteerableParachute",
+				"HGU55P_MBU12P_Amber",
+				"HGU55P_MBU12P_Clear",
+				"HGU55P_MBU12P_Tinted",
+				"JHMCS_MBU12P",
+				"JHMCS_MBU14P",
+				"JHMCS2_MBU12P",
+				"JHMCS2_MBU20P",
+				"JHMCS2_MBU20P",
+				"JHMCS_MBU23P"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
