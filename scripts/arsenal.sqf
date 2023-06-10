@@ -1143,8 +1143,6 @@ _railAttachments = [
 	"Tier1_SOCOM762_2_Black",
 	"Tier1_SOCOM762_2_Mini_DE",
 	"Tier1_SOCOM762_2_Mini_Black",
-	"Tier1_SOCOM762MG_DE",
-	"Tier1_SOCOM762MG_Black",
 	"Tier1_KAC_762_QDC_Tan",
 	"Tier1_KAC_762_QDC_Black",
 	"Tier1_KAC_762_DSR",
@@ -1222,7 +1220,7 @@ else {
 switch (_role) do {
 
 case "command": {
-		[_box, _beret + _multicamUniforms + _mcVestsLeader + _mcRadioPacks + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
+		[_box, _beret + _multicamUniforms + _mcVestsLeader + _mcRadioPacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
 				"ACRE_PRC117F",
 				"ACRE_PRC152",
 				"ItemcTab",
