@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=103;
+		nextID=104;
 	};
 	class Camera
 	{
-		pos[]={7584.6104,16.860071,7481.8452};
-		dir[]={-0.01908002,-0.53808528,-0.84272313};
-		up[]={-0.012180506,0.84287602,-0.53796089};
-		aside[]={-0.99978125,4.1111434e-007,0.022639187};
+		pos[]={7584.354,7.1207743,7469.1997};
+		dir[]={-0.012575216,-0.41984147,-0.90757656};
+		up[]={-0.0058168294,0.90757906,-0.41983184};
+		aside[]={-0.99996126,-2.8752538e-007,0.013855728};
 	};
 };
 binarizationWanted=0;
@@ -37,7 +37,7 @@ addons[]=
 	"USP_Gear_Body",
 	"Terror_Pack",
 	"LTF_PMC",
-	"FIR_PilotCrewPack_US",
+	"MoePilotCoveralls",
 	"A3_Characters_F_Orange_Facewear",
 	"ace_goggles",
 	"Markers",
@@ -99,8 +99,9 @@ class AddonsMetaData
 		};
 		class Item7
 		{
-			className="FIR_PilotCrewPack_US";
-			name="FIR_PilotCrewPack_US";
+			className="MoePilotCoveralls";
+			name="Moe Pilot Coveralls";
+			author="556Moe";
 		};
 		class Item8
 		{
@@ -32091,7 +32092,7 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="FIR_Fighter_Pilot_Nomex3";
+										typeName="CSU13BP_Base";
 										isBackpack=0;
 									};
 									map="ItemMap";

@@ -177,7 +177,8 @@ _mcSmallBackpacks = [
 	"USP_PACK_BREACHER_MC",
 	"USP_PACK_FASTHAWK",
 	"USP_PACK_HYDRATION",
-	"USP_PACK_POINTMAN"
+	"USP_PACK_POINTMAN",
+	"B_rhsusf_B_BACKPACK"
 ];
 
 _mcBigBackpacks = [
@@ -519,6 +520,7 @@ _ammo = [
 
 _basicMedical = [
 	"nzf_FAK",
+	"kat_CaffeineItem",
 	"kat_Pulseoximeter"
 ];
 
