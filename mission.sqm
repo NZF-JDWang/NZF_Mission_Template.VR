@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=252;
+		nextID=254;
 	};
 	class LayerIndexProvider
 	{
-		nextID=104;
+		nextID=105;
 	};
 	class Camera
 	{
-		pos[]={7584.354,7.1207743,7469.1997};
-		dir[]={-0.012575216,-0.41984147,-0.90757656};
-		up[]={-0.0058168294,0.90757906,-0.41983184};
-		aside[]={-0.99996126,-2.8752538e-007,0.013855728};
+		pos[]={7595.1777,12.300756,7469.0112};
+		dir[]={-0.086442947,-0.82547027,-0.55792642};
+		up[]={-0.12638327,0.56445682,-0.81572121};
+		aside[]={-0.98827839,1.7142156e-007,0.15312025};
 	};
 };
 binarizationWanted=0;
@@ -36,7 +36,7 @@ addons[]=
 	"ALTIMETER",
 	"USP_Gear_Body",
 	"Terror_Pack",
-	"LTF_PMC",
+	"flb_uniforms",
 	"MoePilotCoveralls",
 	"A3_Characters_F_Orange_Facewear",
 	"ace_goggles",
@@ -94,8 +94,8 @@ class AddonsMetaData
 		};
 		class Item6
 		{
-			className="LTF_PMC";
-			name="LTF_PMC";
+			className="flb_uniforms";
+			name="flb_uniforms";
 		};
 		class Item7
 		{
@@ -29591,7 +29591,7 @@ class Mission
 							{
 								rank="CORPORAL";
 								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Intelligence Operator";
+								description="Intel Analyst";
 								isPlayable=1;
 								class Inventory
 								{
@@ -30465,7 +30465,7 @@ class Mission
 							{
 								rank="CORPORAL";
 								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Intelligence Operator";
+								description="Intel Analyst";
 								isPlayable=1;
 								class Inventory
 								{
@@ -31247,7 +31247,7 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="BDU_Uni_Shirt_8";
+										typeName="flb_Jeans_Hoodie_BoogBoy_uniform";
 										isBackpack=0;
 									};
 									map="ItemMap";
@@ -31488,7 +31488,7 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="BDU_Uni_Shirt_3";
+										typeName="ButtonUp_Cargo_OD_RED_uniform";
 										isBackpack=0;
 									};
 									map="ItemMap";

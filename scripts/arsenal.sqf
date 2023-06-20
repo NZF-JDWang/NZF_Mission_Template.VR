@@ -121,9 +121,7 @@ _mcVestsMachinegun = [
 	"Crye_AVS_MC_LMG_1_NC_NoBelt",
 	"Crye_AVS_MC_LMG_1_NC",
 	"Crye_JPC_LMG_MC_1_NoBelt",
-	"Crye_JPC_LMG_MC_1",
-	"USP_CRYE_JPC_MGB",
-	"USP_CRYE_JPC_MG"
+	"Crye_JPC_LMG_MC_1"
 ];
 
 _mcOperatorVests = [
@@ -142,10 +140,7 @@ _mcOperatorVests = [
 	"Crye_JPC_MC_7_NoBelt",
 	"Crye_JPC_MC_7",
 	"Crye_JPC_MC_10_NoBelt",
-	"Crye_JPC_MC_10",
-	"USP_VEST_STRANDHOGG2_MC",
-	"USP_VEST_PLATEFRAME_LOAD_MC",
-	"USP_VEST_PLATEFRAME_LOAD2_MC"
+	"Crye_JPC_MC_10"
 ];
 //***************************************************************
 _mcSmallBackpacks = [
@@ -417,6 +412,65 @@ _facewear = [
 	"USP_SHEMAGH2_RGR"
 ];
 
+_lowVisGear = [
+	"flb_511TacPants_ButtonUp_TanBlk_uniform",
+	"flb_511TacPants_ButtonUp_TanBlue_uniform",
+	"flb_511TacPants_ButtonUp_TanGreen_uniform",
+	"flb_511TacPants_ButtonUp_TanRed_uniform",
+	"flb_511TacPants_ButtonUp_TanWht_uniform",
+	"flb_511TacPants_ButtonUp_TanYellow_uniform",
+	"flb_511TacPants_ButtonUp_Rolled_TanBlk_uniform",
+	"flb_511TacPants_ButtonUp_Rolled_TanBlue_uniform",
+	"flb_511TacPants_ButtonUp_Rolled_TanGreen_uniform",
+	"flb_511TacPants_ButtonUp_Rolled_TanRed_uniform",
+	"flb_511TacPants_ButtonUp_Rolled_TanWht_uniform",
+	"flb_511TacPants_ButtonUp_Rolled_TanYellow_uniform",
+	"ButtonUp_Cargo_BLK_V1_uniform",
+	"ButtonUp_Cargo_BLK_BLUE_uniform",
+	"ButtonUp_Cargo_BLK_RED_uniform",
+	"ButtonUp_Cargo_BLK_WHITE_uniform",
+	"ButtonUp_Cargo_KHK_BLK_uniform",
+	"ButtonUp_Cargo_KHK_BLUE_uniform",
+	"ButtonUp_Cargo_KHK_RED_uniform",
+	"ButtonUp_Cargo_KHK_WHITE_uniform",
+	"ButtonUp_Cargo_OD_BLK_uniform",
+	"ButtonUp_Cargo_OD_BLUE_uniform",
+	"ButtonUp_Cargo_OD_RED_uniform",
+	"ButtonUp_Cargo_OD_WHITE_uniform",
+	"flb_Jeans_Hoodie_Blk_uniform",
+	"flb_Jeans_Hoodie_Blue_uniform",
+	"flb_Jeans_Hoodie_BoogBoy_uniform",
+	"flb_Jeans_Hoodie_FYF_uniform",
+	"flb_Jeans_Hoodie_Rgr_uniform",
+	"flb_Shorts_Hoodie_BlkBlk_uniform",
+	"flb_Shorts_Hoodie_BlkBlue_uniform",
+	"flb_Shorts_Hoodie_BlkBoogBoy_uniform",
+	"flb_Shorts_Hoodie_BlkFYF_uniform",
+	"flb_Shorts_Hoodie_BlkRgr_uniform",
+	"flb_Shorts_Hoodie_BlkGrey_uniform",
+	"flb_Shorts_Hoodie_BlkGTAC_uniform",
+	"flb_Shorts_Hoodie_BlkRed_uniform",
+	"gxts_urb_gry_tshirt_blk_uni",
+	"gxts_urb_gry_tshirt_blk_g_uni",
+	"gxts_urb_gry_tshirt_blue_uni",
+	"gxts_urb_gry_tshirt_blue_g_uni",
+	"gxts_urb_gry_tshirt_brown_uni",
+	"gxts_urb_gry_tshirt_brown_g_uni",
+	"gxts_urb_gry_tshirt_gray_uni",
+	"gxts_urb_gry_tshirt_gray_g_uni",
+	"gxts_urb_gry_tshirt_white_uni",
+	"gxts_urb_gry_tshirt_white_g_uni",
+	"gxts_urb_gry_tshirt_blk_sleeve_uni",
+	"gxts_urb_gry_tshirt_blk_sleeve_g_uni",
+	"gxts_urb_gry_tshirt_blue_sleeve_uni",
+	"gxts_urb_gry_tshirt_blue_sleeve_g_uni",
+	"gxts_urb_gry_tshirt_brown_sleeve_uni",
+	"gxts_urb_gry_tshirt_brown_sleeve_g_uni",
+	"gxts_urb_gry_tshirt_gray_sleeve_uni",
+	"gxts_urb_gry_tshirt_gray_sleeve_g_uni",
+	"gxts_urb_gry_tshirt_white_sleeve_uni",
+	"gxts_urb_gry_tshirt_white_sleeve_g_uni"
+];
 _NVGs = [
 	"USP_NSEAS",
 	"USP_GPNVG18",
@@ -433,6 +487,7 @@ _NVGs = [
 _ammo = [
 //Ammo 
 	"X26_Cartridge_Yellow",
+	"121_2Rnd_Slug",
 	"ACE_HuntIR_M203",
 	"ACE_7Rnd_408_305gr_Mag",
 	"Tier1_20Rnd_762x51_M118_Special_SR25_Mag",
@@ -543,6 +598,7 @@ _drugs = [
 
 _pistols = [
 	"crow_x26_blk_yellow",
+	"121_serbu_breacher",
 	"Tier1_Glock19_Urban_TB",
 	"Tier1_Glock22_TB_Rail",
 	"Tier1_P320_TB",
@@ -1212,8 +1268,8 @@ else {
 		if ("Pointman" in _playerRole) then {_role = "Pointman"; player setVariable ["ACE_isEngineer", 2, true];}; 
 		if ("Machinegunner" in _playerRole) then {_role = "Machinegunner"};
 		if ("Marksman" in _playerRole) then {_role = "Marksman"};
-		if (_playerRole == "Intelligence Operator") then {_role = "Intelligence Operator"};
-		if (_playerRole == "Operator") then {_role = "Operator"};
+		if ("Intel" in _playerRole) then {_role = "Intel"};
+		if ("Operator" in _playerRole) then {_role = "Operator"};
 		if ("Helicopter" in _playerRole) then {_role = "Helicopter"}; player setVariable ["ACE_isEngineer", 2, true];
 		if ("CAS" in _playerRole) then {_role = "Pilot"}; player setVariable ["ACE_isEngineer", 2, true];
 		if ("TEST" in _playerRole) then {_role = "Operator"};
@@ -1254,8 +1310,9 @@ case "JTAC": {
 				"ACE_Vector",
 				"B_UavTerminal",
 				"sps_black_hornet_01_Static_F",
-				"SwitchBlade_300_Tube_Desert",
-				"SwitchBlade_600_Tube_Desert"
+				"asip_a_01_mc",
+				"satcom_01",
+				"GK_117G"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
@@ -1292,6 +1349,10 @@ case "Machinegunner": {
 
 case "Marksman": {
 		[_box, _beret + _multicamUniforms + _mcOperatorVests + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _marksmanRifles + _railattachments + [
+				"tfb_atacr",
+				"tfb_atacr_lwts",
+				"tfb_atacr2",
+				"tfb_atacr2_lwts",
 				"ACE_ATragMX",
 				"ACE_Kestrel4500",
 				"ACRE_PRC152",
@@ -1301,7 +1362,7 @@ case "Marksman": {
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
-case "Intelligence Operator": {
+case "Intel": {
 		[_box, _beret + _multicamUniforms + _mcOperatorVests + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _facewear + _caps + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
 				"ItemcTab",
 				"Nikon_DSLR_HUD",
@@ -1372,7 +1433,7 @@ case "Pilot": {
 };
 
 case "blackfootCommand": {
-		[_box, _beret + _undercoverGear + _ammo + _basicMedical + _pistols + [
+		[_box, _beret + _lowVisGear + _mcOperatorVests + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _facewear + _caps + _NVGS + _ammo + _basicMedical + _pistols + [
 				"ItemcTab",
 				"Nikon_DSLR_HUD",
 				"Hate_Smartphone_HUD",
@@ -1389,13 +1450,13 @@ case "blackfootCommand": {
 };
 
 case "blackfootCLS": {
-		[_box, _beret + _undercoverGear + _ammo + _advancedMedical + _pistols + [
+		[_box, _beret + _lowVisGear + _mcOperatorVests + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _facewear + _caps + _NVGS + _ammo + _advancedMedical + _pistols + [
 
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
 case "blackfootOperator": {
-		[_box, _beret + _undercoverGear + _ammo + _basicMedical + _pistols + [
+		[_box, _beret + _lowVisGear + _mcOperatorVests + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _facewear + _caps + _NVGS + _ammo + _basicMedical + _pistols + [
 				"ItemcTab",
 				"Nikon_DSLR_HUD",
 				"Hate_Smartphone_HUD",
