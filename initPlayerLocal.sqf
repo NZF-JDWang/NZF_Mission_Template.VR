@@ -18,10 +18,9 @@ removeHeadgear player;
 //Now check if they're in the Unit and if so give them a NZF beret
 if (squadParams player select 0 select 0 == "NZF") then {player addHeadgear "nzf_beret_black_silver"} else {player addHeadgear ""};
 
-//Make players less visible to the AI and add the blood patch 
+//Make players less visible to the AI  
 
 [] spawn NZF_fnc_camo;
-player spawn NZF_fnc_bloodpatch;
 
 // Setup INCON Undercover 
 if (player getVariable ["isSneaky",false]) then {
@@ -40,7 +39,6 @@ _unit addEventHandler ["Killed", {
 
 _unit addEventHandler ["Respawn", {
     params ["_unit"];
-    _unit spawn NZF_fnc_bloodpatch;
     if (!isNil "Mission_loadout") then {
         _unit setUnitLoadout Mission_loadout;
 		};
