@@ -4,7 +4,6 @@ class NZF
 	class client
 	{
 		file = "functions\client";
-		class bloodpatch {};
 		class camo {};
 	};
 

@@ -450,6 +450,11 @@ _lowVisGear = [
 	"flb_Shorts_Hoodie_BlkGrey_uniform",
 	"flb_Shorts_Hoodie_BlkGTAC_uniform",
 	"flb_Shorts_Hoodie_BlkRed_uniform",
+	"flb_Shorts_Hoodie_MCMBlk_uniform",
+	"flb_Shorts_Hoodie_MCMRgr_uniform",
+	"flb_Shorts_Hoodie_MCMGTAC_uniform",
+	"flb_Shorts_Hoodie_MCMRunUP1_uniform",
+	"flb_Shorts_Hoodie_MCMSPL_uniform",
 	"gxts_urb_gry_tshirt_blk_uni",
 	"gxts_urb_gry_tshirt_blk_g_uni",
 	"gxts_urb_gry_tshirt_blue_uni",
@@ -1282,7 +1287,7 @@ else {
 switch (_role) do {
 
 case "command": {
-		[_box, _beret + _multicamUniforms + _mcVestsLeader + _mcRadioPacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
+		[_box, _beret + _multicamUniforms + _mcVestsLeader + _mcRadioPacks + _mcSmallBackpacks + _mcBigBackpacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
 				"ACRE_PRC117F",
 				"ACRE_PRC152",
 				"ItemcTab",
@@ -1301,7 +1306,7 @@ case "Leader": {
 };
 
 case "JTAC": {
-		[_box, _beret + _multicamUniforms + _mcVestsComms + _mcRadiopacks + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
+		[_box, _beret + _multicamUniforms + _mcVestsComms + _mcHeadgear + _CBHeadgear + _ODHeadgear + _caps + _facewear + _NVGS + _ammo + _basicMedical + _pistols + _rifles + _optics + _railattachments + _launchers + [
 				"ACRE_PRC117F",
 				"ACRE_PRC152",
 				"ItemcTab",
