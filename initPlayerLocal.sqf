@@ -2,7 +2,7 @@
 ["InitializePlayer", [player,true]] call BIS_fnc_dynamicGroups; 
 
 //ACE Spectator
-[allPlayers, [player]] call ace_spectator_fnc_updateUnits;
+[allPlayers, [player, "ZEUS_1", "ZEUS_2"]] call ace_spectator_fnc_updateUnits;
 [[1,2], [0]] call ace_spectator_fnc_updateCameraModes;
 [[-2,-1], [0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes;
 
@@ -11,7 +11,7 @@ arsenal_1 execVM "scripts\arsenal.sqf";
 
 
 //Make sure players come into the mission with only what we have the set as in the editor
-_gameMaster = ["ZEUS"];
+_gameMaster = ["ZEUS_1", "ZEUS_2"];
 if (vehicleVarName player in _gameMaster) then {} else {removeGoggles player};
 removeHeadgear player;
 
