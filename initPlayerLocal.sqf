@@ -1,6 +1,6 @@
 //Initialize player groups (U - menu) 
 ["InitializePlayer", [player,true]] call BIS_fnc_dynamicGroups; 
-_gameMaster = ["ZEUS_1", "ZEUS_2"];
+_gameMaster = [ZEUS_1, ZEUS_2];
 
 //ACE Spectator
 [allPlayers, [player, _gameMaster]] call ace_spectator_fnc_updateUnits;
