@@ -1,7 +1,7 @@
 //#include "USArmyRHS.hpp"
 //#include "75thRangers.hpp"
-#include "PMC.hpp"
-//#include "SpecOps.hpp"
+//#include "PMC.hpp"
+#include "SpecOps.hpp"
 //*******************************************************************************
 params ["_box"];
 
