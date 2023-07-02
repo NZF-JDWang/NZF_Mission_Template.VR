@@ -1,24 +1,24 @@
 respawn = 3;                    //Respawn at respawn markers
 respawnOnStart = -1;	    	//Don't respawn, don't run onPlayerRespawn on start
 enableDebugConsole = 1;     	//Allows debug console for admin
-disabledAI = 1;			//Stop AI from filling playable roles
+disabledAI = 1;			        //Stop AI from filling playable roles
 allowProfileGlasses = 0;        //Stops players loading in with facewear
 //*****************************************************************************************************************
 //Disable all chat channels except GLOBAL
 disableChannels[] = {
 	{
 		0,		// channel ID
-		false,	// disable text chat
+		true,	// disable text chat
 		true	// disable voice chat
 	},
-	{ 1, true, true },{ 2, true, true },{ 3, true, true },{ 4, true, true },{ 5, true, true }
+	{ 1, true, true },{ 2, true, true },{ 3, true, true },{ 4, true, true },{ 5, false, true }
 };
 //*****************************************************************************************************************
 //Mission Details
 author			= "Mission Author";
 onLoadName		= "Mission Name";
 onLoadMission	= "";
-loadScreen		= "";
+loadScreen		= "media\images\defaultMissionImage.paa";
 
 //*****************************************************************************************************************
 //Corpse management 
@@ -43,7 +43,6 @@ class CfgSounds {
 		
 };
 //*****************************************************************************************************************
-
 class Extended_InitPost_EventHandlers {
      class CAManBase {
 		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";

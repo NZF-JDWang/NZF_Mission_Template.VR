@@ -10,8 +10,7 @@ _gameMaster = ["ZEUS_1", "ZEUS_2"];
 [[-2,-1], [0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes;
 
 //Load arsenals - Ensure you have a item named arsenal_1 or comment this out of you're not using an arsenal
-arsenal_1 execVM "scripts\arsenal.sqf"; 
-
+arsenal_1 execVM "arsenal\arsenal.sqf";
 //Make sure players come into the mission with only what we have the set as in the editor
 if (vehicleVarName player in _gameMaster) then {} else {removeGoggles player};
 removeHeadgear player;
@@ -21,6 +20,7 @@ if (squadParams player select 0 select 0 == "NZF") then {player addHeadgear "nzf
 
 //Make players less visible to the AI 
 [] spawn NZF_fnc_camo;
+[player, ""] call BIS_fnc_setUnitInsignia;
 
 // Setup INCON Undercover (it's ok to leave this even if you're not using the undercover scripts)
 if (player getVariable ["isSneaky",false]) then {
@@ -39,6 +39,7 @@ _unit addEventHandler ["Killed", {
 
 _unit addEventHandler ["Respawn", {
     params ["_unit"];
+    [_unit, ""] call BIS_fnc_setUnitInsignia;
     if (!isNil "Mission_loadout") then {
         _unit setUnitLoadout Mission_loadout;
 		};

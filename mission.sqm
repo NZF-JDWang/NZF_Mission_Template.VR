@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	mods[]=
 	{
 		"rid_eden"
 	};
 	class ItemIDProvider
 	{
-		nextID=254;
+		nextID=585;
 	};
 	class LayerIndexProvider
 	{
-		nextID=105;
+		nextID=129;
 	};
 	class Camera
 	{
-		pos[]={7595.1777,12.300756,7469.0112};
-		dir[]={-0.086442947,-0.82547027,-0.55792642};
-		up[]={-0.12638327,0.56445682,-0.81572121};
-		aside[]={-0.98827839,1.7142156e-007,0.15312025};
+		pos[]={7605.9722,7.1291876,7467.4771};
+		dir[]={-0.87804484,-0.29703194,-0.3752926};
+		up[]={-0.27314267,0.95486134,-0.11674654};
+		aside[]={-0.39303187,-2.9156217e-007,0.91954744};
 	};
 };
 binarizationWanted=0;
@@ -47,13 +47,21 @@ addons[]=
 	"A3_Modules_F_Multiplayer",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Props_F_Enoch_Military_Camps",
-	"Tier1_BettIR_cfg"
+	"Tier1_BettIR_cfg",
+	"A3_Structures_F_Walls",
+	"A3_Modules_F",
+	"A3_Soft_F_Enoch_Truck_01",
+	"A3_Characters_F_Common",
+	"A3_Static_F_Jets_AAA_System_01",
+	"A3_Weapons_F_Ammoboxes",
+	"ace_rearm",
+	"ace_dragging"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=23;
 		class Item0
 		{
 			className="plp_containers";
@@ -169,12 +177,48 @@ class AddonsMetaData
 			className="Tier1_BettIR_cfg";
 			name="Tier1_BettIR_cfg";
 		};
+		class Item18
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item19
+		{
+			className="A3_Soft_F_Enoch";
+			name="Arma 3 Contact Platform - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item20
+		{
+			className="A3_Static_F_Jets";
+			name="Arma 3 Jets - Turrets";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item21
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item22
+		{
+			className="ace_dragging";
+			name="ACE3 - Dragging";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
 	};
 };
 dlcs[]=
 {
 	"USP_GearUniforms",
-	"Enoch"
+	"Enoch",
+	"Jets"
 };
 randomSeed=12822125;
 class ScenarioData
@@ -28907,7 +28951,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=19;
 		class Item0
 		{
 			dataType="Object";
@@ -32844,6 +32888,330 @@ class Mission
 			};
 			title="Arsenal";
 			id=243;
+		};
+		class Item8
+		{
+			dataType="Layer";
+			name="Auto Bar Gates";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7572.6548,9.0502806,7424.771};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						name="barGate_1";
+					};
+					id=256;
+					type="Land_BarGate_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Trigger";
+					position[]={7573.0698,5,7424.9731};
+					class Attributes
+					{
+						onActivation="barGate_1 animate [""Door_1_rot"", 1];";
+						onDeactivation="barGate_1 animate [""Door_1_rot"", 0];";
+						sizeA=5;
+						sizeB=15;
+						sizeC=5;
+						repeatable=1;
+						activationBy="ANYPLAYER";
+						isRectangle=1;
+					};
+					id=254;
+					type="EmptyDetectorArea10x10";
+				};
+				class Item2
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={7572.6548,5,7424.6768};
+					};
+					areaSize[]={5.4099998,0,5};
+					areaIsRectangle=1;
+					flags=1;
+					id=255;
+					type="ModuleHideTerrainObjects_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="#filter";
+							expression="_this setVariable [""#filter"",_value]";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=15;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="#hideLocally";
+							expression="_this setVariable [""#hideLocally"",_value]";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			id=257;
+		};
+		class Item9
+		{
+			dataType="Layer";
+			name="Protect Buildings";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={7588.1377,5,7424.4648};
+					};
+					init="call{{_x allowdammage false;} foreach ((getpos this) nearObjects [""House"", 250]);}";
+					id=259;
+					type="Logic";
+				};
+			};
+			id=260;
+		};
+		class Item10
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7572.7661,5,7422.4282};
+			};
+			title="Auto Bargate";
+			description="Copy the 3 items (Module, trigger and gate) and paste where you want your bargate." \n "This will hide any objects in the module area and open the gate when any player enters the trigger";
+			id=261;
+		};
+		class Item11
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7588.1479,5,7423.3599};
+			};
+			title="Protect buildings";
+			description="Copy the game logic and place it in your mission and any buildings within 250m will not take damage." \n "Change the 250 in the init to whatever range you like.";
+			id=262;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7602.5771,7.7020283,7424.1899};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="cwis_1 attachTo [truck_1, [0,.2,1.7]];" \n "crate_1 attachTo [truck_1, [0,-3.1,0]];";
+				name="truck_1";
+			};
+			id=263;
+			type="B_Truck_01_flatbed_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7610.7349,7.5071959,7423.6104};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						name="cwis_1G";
+					};
+					id=266;
+					type="B_UAV_AI";
+					atlOffset=2.5057573;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=266;
+						item1=265;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=264;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7607.6484,7.5057573,7428.2139};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="this addeventhandler [""fired"", {(_this select 0) setvehicleammo 1}]; ";
+				name="cwis_1";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=265;
+			type="B_AAA_System_01_F";
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7607.5562,5.7898083,7421.0054};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="crate_1";
+			};
+			id=267;
+			type="Box_NATO_AmmoVeh_F";
+		};
+		class Item16
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7581.6079,5,7457.7632};
+			};
+			name="HC1";
+			isPlayable=1;
+			description="J";
+			id=268;
+			type="HeadlessClient_F";
+		};
+		class Item17
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7580.478,5,7457.7651};
+			};
+			name="HC2";
+			isPlayable=1;
+			description="D";
+			id=269;
+			type="HeadlessClient_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rid_eden_objectID";
+					expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=269;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item18
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={7605.2441,5,7424.1221};
+			};
+			title="Mobile CWIS (Good base defense)";
+			description="Copy and paste all 3 items, on mission start the CWIS and Ammo crate will be attached to the back of the HEMMT." \n "If you want to add more you need to change the names of truck_1, cwis_1 and crate_1 (changing the 1's for 2's etc) and then change the names in the truck init to match ." \n "The CWIS also has an Event Handler ensuring it never runs out of ammo";
+			id=270;
 		};
 	};
 };
