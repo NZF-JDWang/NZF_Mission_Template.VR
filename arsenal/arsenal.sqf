@@ -1,6 +1,7 @@
 //#include "USArmyRHS.hpp"
 //#include "75thRangers.hpp"
-#include "SpecOps.hpp"
+#include "PMC.hpp"
+//#include "SpecOps.hpp"
 //*******************************************************************************
 params ["_box"];
 
@@ -83,6 +84,7 @@ case "JTAC": {
 				"USP_CRYE_AIRFRAME",
 				"USP_CRYE_AIRFRAME_CT3",
 				"USP_CRYE_AIRFRAME_VL",
+				"asip_a_02_cb",
 				"asip_a_01_mc",
 				"satcom_01",
 				"GK_117G",

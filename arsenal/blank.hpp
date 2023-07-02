@@ -46,11 +46,9 @@ _headgearLight = [
 _headgearHeavy = [
 
 ];
-
 _headgearHelicopters = [
 
 ];
-
 _headgearFixedWing = [
 
 ];
