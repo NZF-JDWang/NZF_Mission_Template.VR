@@ -81,6 +81,9 @@ _pistols = [
 _rifles = [
 
 ];
+_riflesGrenadier = [
+
+];
 _marksmanRiflesAndScopes = [
 
 ];

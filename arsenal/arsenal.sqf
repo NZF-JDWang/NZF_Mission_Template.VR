@@ -149,8 +149,8 @@ case "Intel": {
 };
 
 case "Grenadier": {
-		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _backpacksLarge  + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
-				"rhs_weap_m4a1_m203"
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _backpacksLarge  + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _riflesGrenadier + _optics + _attachments + _launchers + _miscAce + [
+				
 			],false] call ace_arsenal_fnc_initBox; 
 };
 

@@ -99,7 +99,6 @@ _headgearHeavy = [
 	"USP_OPSCORE_FASTMTC",
 	"USP_OPSCORE_FASTMTC_C"
 ];
-
 _headgearHelicopters = [
 	"rhsusf_hgu56p_visor_black",
 	"rhsusf_hgu56p_visor_mask_black",
@@ -114,7 +113,6 @@ _headgearHelicopters = [
 	"rhsusf_hgu56p_visor_mask_skull",
 	"rhsusf_ihadss"
 ];
-
 _headgearFixedWing = [
 	"HGU55P_MBU12P_Amber",
 	"HGU55P_MBU12P_Clear",
@@ -330,6 +328,10 @@ _rifles = [
 	"rhs_weap_m4a1_blockII_KAC_bk",
 	"rhs_weap_m4a1_blockII_d",
 	"rhs_weap_m4a1_blockII_KAC_d"		
+];
+_riflesGrenadier = [
+	"rhs_weap_m4a1_blockII_M203_bk",
+	"rhs_weap_m4a1_blockII_M203_d"
 ];
 _marksmanRiflesAndScopes = [
 	"rhs_weap_sr25_ec",

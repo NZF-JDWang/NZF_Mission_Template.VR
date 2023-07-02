@@ -682,6 +682,9 @@ _rifles = [
 	"rhs_weap_mk18_KAC_d", 
 	"rhs_weap_mk18_KAC"
 ];
+_riflesGrenadier = [
+
+];
 _marksmanRiflesAndScopes = [
 	"Tier1_SR25_EC_tan",
 	"Tier1_SR25_EC",

@@ -194,6 +194,10 @@ _rifles = [
 	"rhs_weap_m4a1",
 	"rhs_weap_m4a1_mstock"
 ];
+_riflesGrenadier = [
+	"rhs_weap_m4a1_m203",
+	"rhs_weap_m4a1_m203s"
+];
 _marksmanRiflesAndScopes = [
 	"rhs_weap_m14ebrri",
 	"rhsusf_acc_premier_low",
