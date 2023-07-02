@@ -77,6 +77,7 @@ _throwablesExplosives = [
 ];
 _pistols = [
 
+];
 _rifles = [
 
 ];
