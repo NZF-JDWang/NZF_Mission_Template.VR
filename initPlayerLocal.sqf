@@ -1,5 +1,6 @@
 //Initialize player groups (U - menu) 
 ["InitializePlayer", [player,true]] call BIS_fnc_dynamicGroups; 
+_gameMaster = [ZEUS_1, ZEUS_2];
 
 //Define the zeus units 
 _gameMaster = ["ZEUS_1", "ZEUS_2"];
