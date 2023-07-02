@@ -51,7 +51,7 @@ _condition = {
     _player distance arsenal_1 < 10;
 };
 _statement = {
-    arsenal_1 execVM "scripts\arsenal.sqf";
+    arsenal_1 execVM "arsenal\arsenal.sqf";
     [arsenal_1,player,false] call ace_arsenal_fnc_openBox;
 };
 _action = ["Open Arsenal","Open Arsenal","\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\armor_ca.paa",_statement,_condition] call ace_interact_menu_fnc_createAction;
