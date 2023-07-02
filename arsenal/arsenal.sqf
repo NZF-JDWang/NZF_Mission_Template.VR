@@ -173,9 +173,7 @@ case "Helicopter": {
 
 case "Pilot": {
 		[_box, _beret + _uniformsFixedWing + _headgearFixedWing + _NVGs + _basicMedical + _ammo + _pistols + _miscAce + [
-
 				"ACE_NonSteerableParachute"
-
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
