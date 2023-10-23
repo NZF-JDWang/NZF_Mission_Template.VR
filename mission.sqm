@@ -6,24 +6,20 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=1;
-	mods[]=
-	{
-		"rid_eden"
-	};
 	class ItemIDProvider
 	{
-		nextID=590;
+		nextID=598;
 	};
 	class LayerIndexProvider
 	{
-		nextID=150;
+		nextID=231;
 	};
 	class Camera
 	{
-		pos[]={7588.3223,14.481248,7480.1646};
-		dir[]={-0.054461107,-0.46425089,-0.8840279};
-		up[]={-0.028546361,0.88570374,-0.46337247};
-		aside[]={-0.99810791,-1.8626451e-009,0.061489083};
+		pos[]={7589.6187,9.2789402,7470.4795};
+		dir[]={-0.099295653,-0.56381631,-0.81991822};
+		up[]={-0.067785643,0.82589865,-0.55972832};
+		aside[]={-0.99275315,2.3773464e-007,0.12022711};
 	};
 };
 binarizationWanted=0;
@@ -237,23 +233,6 @@ class CustomAttributes
 {
 	class Category0
 	{
-		name="rid_eden_attributes";
-		class Attribute0
-		{
-			property="rid_eden_storedConnections";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		nAttributes=1;
-	};
-	class Category1
-	{
 		name="Multiplayer";
 		class Attribute0
 		{
@@ -289,7 +268,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -29084,7 +29063,7 @@ class Mission
 							{
 								rank="CORPORAL";
 								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];";
-								description="Paramedic";
+								description="Pararescue (PJ)";
 								isPlayable=1;
 								class Inventory
 								{
@@ -29217,19 +29196,6 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=194;
-										};
-									};
-								};
-								class Attribute2
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -29241,7 +29207,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -29254,7 +29220,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -29267,7 +29233,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -29280,7 +29246,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 						class Item3
@@ -29329,19 +29295,6 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=196;
-										};
-									};
-								};
-								class Attribute2
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -29353,7 +29306,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -29366,7 +29319,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -29379,7 +29332,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -29392,7 +29345,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 					};
@@ -29443,19 +29396,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=103;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -29467,7 +29407,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -29480,7 +29420,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -29493,7 +29433,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -29506,7 +29446,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 						class Item1
@@ -29555,119 +29495,6 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=104;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Male01ENG";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.98000002;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="nzf_insignia";
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								nAttributes=6;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7588.2661,5.0014391,7465.6558};
-								angles[]={0,6.2552948,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Intel Analyst";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="USP_G3C_CU_KP_MC";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ATM_ALTIMETER";
-								};
-							};
-							id=105;
-							type="B_Soldier_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=105;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -29719,6 +29546,93 @@ class Mission
 									};
 								};
 								nAttributes=5;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={7588.2661,5.0014391,7465.6558};
+								angles[]={0,6.2552948,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								rank="CORPORAL";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
+								description="Intel Analyst";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="USP_G3C_CU_KP_MC";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ATM_ALTIMETER";
+								};
+							};
+							id=105;
+							type="B_Soldier_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male01ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0.98000002;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="nzf_insignia";
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=4;
 							};
 						};
 						class Item3
@@ -29767,57 +29681,18 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									property="speaker";
+									expression="_this setspeaker _value;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="nzf_insignia";
+											value="Male01ENG";
 										};
 									};
 								};
 								class Attribute2
-								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=106;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=0;
-										};
-									};
-								};
-								class Attribute5
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -29830,20 +29705,46 @@ class Mission
 										};
 									};
 								};
-								class Attribute6
+								class Attribute3
 								{
-									property="speaker";
-									expression="_this setspeaker _value;";
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="Male01ENG";
+											value="nzf_insignia";
 										};
 									};
 								};
-								nAttributes=7;
+								class Attribute5
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=6;
 							};
 						};
 						class Item4
@@ -29880,19 +29781,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=107;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -29904,7 +29792,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -29917,7 +29805,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -29930,7 +29818,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -29943,7 +29831,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 						class Item5
@@ -29992,57 +29880,18 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									property="speaker";
+									expression="_this setspeaker _value;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="nzf_insignia";
+											value="Male01ENG";
 										};
 									};
 								};
 								class Attribute2
-								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=108;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								class Attribute5
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30055,20 +29904,46 @@ class Mission
 										};
 									};
 								};
-								class Attribute6
+								class Attribute3
 								{
-									property="speaker";
-									expression="_this setspeaker _value;";
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="Male01ENG";
+											value="nzf_insignia";
 										};
 									};
 								};
-								nAttributes=7;
+								class Attribute5
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=6;
 							};
 						};
 						class Item6
@@ -30104,19 +29979,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=109;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -30128,7 +29990,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30141,7 +30003,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -30154,7 +30016,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -30167,7 +30029,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 						class Item7
@@ -30203,19 +30065,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=110;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -30227,7 +30076,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30240,7 +30089,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -30253,7 +30102,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -30266,7 +30115,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 					};
@@ -30317,19 +30166,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=136;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -30341,7 +30177,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30354,7 +30190,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -30367,7 +30203,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -30380,7 +30216,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 						class Item1
@@ -30429,119 +30265,6 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=137;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Male01ENG";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.98000002;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="nzf_insignia";
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								nAttributes=6;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7586.208,5.0014391,7465.686};
-								angles[]={0,6.2552948,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Intel Analyst";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="USP_G3C_CU_KP_MC";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ATM_ALTIMETER";
-								};
-							};
-							id=138;
-							type="B_Soldier_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=138;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -30593,6 +30316,93 @@ class Mission
 									};
 								};
 								nAttributes=5;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={7586.208,5.0014391,7465.686};
+								angles[]={0,6.2552948,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								rank="CORPORAL";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
+								description="Intel Analyst";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="USP_G3C_CU_KP_MC";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ATM_ALTIMETER";
+								};
+							};
+							id=138;
+							type="B_Soldier_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male01ENG";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0.98000002;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="nzf_insignia";
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=4;
 							};
 						};
 						class Item3
@@ -30641,57 +30451,18 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									property="speaker";
+									expression="_this setspeaker _value;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="nzf_insignia";
+											value="Male01ENG";
 										};
 									};
 								};
 								class Attribute2
-								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=139;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=0;
-										};
-									};
-								};
-								class Attribute5
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30704,20 +30475,46 @@ class Mission
 										};
 									};
 								};
-								class Attribute6
+								class Attribute3
 								{
-									property="speaker";
-									expression="_this setspeaker _value;";
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="Male01ENG";
+											value="nzf_insignia";
 										};
 									};
 								};
-								nAttributes=7;
+								class Attribute5
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=6;
 							};
 						};
 						class Item4
@@ -30754,19 +30551,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=140;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -30778,7 +30562,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30791,7 +30575,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -30804,7 +30588,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -30817,7 +30601,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 						class Item5
@@ -30866,57 +30650,18 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									property="speaker";
+									expression="_this setspeaker _value;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="nzf_insignia";
+											value="Male01ENG";
 										};
 									};
 								};
 								class Attribute2
-								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=141;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_isEOD";
-									expression="_this setVariable ['ACE_isEOD', _value, true]";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								class Attribute5
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -30929,20 +30674,46 @@ class Mission
 										};
 									};
 								};
-								class Attribute6
+								class Attribute3
 								{
-									property="speaker";
-									expression="_this setspeaker _value;";
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
 									{
 										class data
 										{
 											singleType="STRING";
-											value="Male01ENG";
+											value="nzf_insignia";
 										};
 									};
 								};
-								nAttributes=7;
+								class Attribute5
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=6;
 							};
 						};
 						class Item6
@@ -30978,19 +30749,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=142;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -31002,7 +30760,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -31015,7 +30773,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -31028,7 +30786,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31041,7 +30799,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 						class Item7
@@ -31077,19 +30835,6 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=143;
-										};
-									};
-								};
-								class Attribute1
-								{
 									property="speaker";
 									expression="_this setspeaker _value;";
 									class Value
@@ -31101,7 +30846,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute1
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -31114,7 +30859,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute3
+								class Attribute2
 								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
@@ -31127,7 +30872,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute4
+								class Attribute3
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31140,7 +30885,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=5;
+								nAttributes=4;
 							};
 						};
 					};
@@ -31230,19 +30975,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=155;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -31254,7 +30986,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31267,7 +30999,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 						class Item1
@@ -31305,6 +31037,19 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="ace_isEngineer";
 									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 									class Value
@@ -31316,59 +31061,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
-								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="nzf_insignia";
-										};
-									};
-								};
 								class Attribute2
-								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=156;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.98000002;
-										};
-									};
-								};
-								class Attribute5
 								{
 									property="speaker";
 									expression="_this setspeaker _value;";
@@ -31381,20 +31074,46 @@ class Mission
 										};
 									};
 								};
-								class Attribute6
+								class Attribute3
 								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									property="pitch";
+									expression="_this setpitch _value;";
 									class Value
 									{
 										class data
 										{
 											singleType="SCALAR";
-											value=1;
+											value=0.98000002;
 										};
 									};
 								};
-								nAttributes=7;
+								class Attribute4
+								{
+									property="unitInsignia";
+									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="nzf_insignia";
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								nAttributes=6;
 							};
 						};
 						class Item2
@@ -31471,19 +31190,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=157;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -31495,7 +31201,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31508,7 +31214,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 						class Item3
@@ -31585,19 +31291,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=158;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -31609,7 +31302,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31622,7 +31315,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 					};
@@ -31711,19 +31404,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=170;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -31735,7 +31415,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31748,7 +31428,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 						class Item1
@@ -31824,19 +31504,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=171;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -31848,7 +31515,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31861,7 +31528,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 					};
@@ -31950,19 +31617,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=185;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -31974,7 +31628,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -31987,7 +31641,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 						class Item1
@@ -32063,19 +31717,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=186;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -32087,7 +31728,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -32100,7 +31741,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 					};
@@ -32150,14 +31791,14 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 									class Value
 									{
 										class data
 										{
 											singleType="SCALAR";
-											value=190;
+											value=2;
 										};
 									};
 								};
@@ -32189,19 +31830,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=2;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="unitInsignia";
 									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
 									class Value
@@ -32213,7 +31841,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="face";
 									expression="_this setface _value;";
@@ -32226,7 +31854,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=6;
+								nAttributes=5;
 							};
 						};
 					};
@@ -32338,19 +31966,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=192;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="face";
 									expression="_this setface _value;";
 									class Value
@@ -32362,7 +31977,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="ace_isEOD";
 									expression="_this setVariable ['ACE_isEOD', _value, true]";
@@ -32375,7 +31990,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute6
+								class Attribute5
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -32388,7 +32003,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute7
+								class Attribute6
 								{
 									property="speaker";
 									expression="_this setspeaker _value;";
@@ -32401,7 +32016,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute8
+								class Attribute7
 								{
 									property="ace_isMedic";
 									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
@@ -32414,7 +32029,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute9
+								class Attribute8
 								{
 									property="enableStamina";
 									expression="_this enablestamina _value;";
@@ -32427,7 +32042,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=10;
+								nAttributes=9;
 							};
 						};
 						class Item1
@@ -32526,19 +32141,6 @@ class Mission
 								};
 								class Attribute3
 								{
-									property="rid_eden_objectID";
-									expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=227;
-										};
-									};
-								};
-								class Attribute4
-								{
 									property="face";
 									expression="_this setface _value;";
 									class Value
@@ -32550,7 +32152,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute5
+								class Attribute4
 								{
 									property="ace_isEOD";
 									expression="_this setVariable ['ACE_isEOD', _value, true]";
@@ -32563,7 +32165,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute6
+								class Attribute5
 								{
 									property="pitch";
 									expression="_this setpitch _value;";
@@ -32576,7 +32178,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute7
+								class Attribute6
 								{
 									property="speaker";
 									expression="_this setspeaker _value;";
@@ -32589,7 +32191,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute8
+								class Attribute7
 								{
 									property="ace_isMedic";
 									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
@@ -32602,7 +32204,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute9
+								class Attribute8
 								{
 									property="enableStamina";
 									expression="_this enablestamina _value;";
@@ -32615,7 +32217,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=10;
+								nAttributes=9;
 							};
 						};
 					};
@@ -32632,8 +32234,9 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7582.6924,5,7470.2256};
+				position[]={7582.6919,5,7470.2261};
 			};
+			name="respawn_west";
 			id=197;
 			type="ModuleRespawnPosition_F";
 			class CustomAttributes
@@ -32828,19 +32431,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="rid_eden_objectID";
-					expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=228;
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="ModuleCurator_F_Name";
 					expression="_this setVariable ['Name',_value,true];";
 					class Value
@@ -32852,7 +32442,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute3
 				{
 					property="ModuleCurator_F_Addons";
 					expression="_this setVariable ['Addons',_value,true];";
@@ -32865,7 +32455,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=4;
 			};
 		};
 		class Item6
@@ -33184,23 +32774,6 @@ class Mission
 			description="D";
 			id=269;
 			type="HeadlessClient_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="rid_eden_objectID";
-					expression="if (is3DEN || {_value < 0}) exitWith {}; [_this, _value] call rid_eden_fnc_registerObjectID";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=269;
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item18
 		{

@@ -1,7 +1,7 @@
 //#include "USArmyRHS.hpp"
 //#include "75thRangers.hpp"
-//#include "PMC.hpp"
-#include "SpecOps.hpp"
+//#include "LowVis.hpp"
+#include "default.hpp"
 //*******************************************************************************
 params ["_box"];
 
@@ -39,7 +39,7 @@ else {
 		if ("Leader" in _playerRole) then {_role = "Leader"};
 		if ("JTAC" in _playerRole) then {_role = "JTAC"};
 		if ("Combat" in _playerRole) then {_role = "CLS"; player setVariable ["Ace_medical_medicClass", 1];}; 
-		if ("Paramedic" in _playerRole) then {_role = "Medic"; player setVariable ["Ace_medical_medicClass", 2];}; 
+		if ("Pararescue" in _playerRole) then {_role = "Medic"; player setVariable ["Ace_medical_medicClass", 2];}; 
 		if ("Pointman" in _playerRole) then {_role = "Pointman"; player setVariable ["ACE_isEngineer", 1, true];}; 
 		if ("Machinegunner" in _playerRole) then {_role = "Machinegunner"};
 		if ("Marksman" in _playerRole) then {_role = "Marksman"};
@@ -126,9 +126,10 @@ case "JTAC": {
 };
 
 case "Medic": {
-		[_box, _beret + _uniforms + _vestsMedic + _backpacksMedic + _headgearLight + _headgearHeavy + _facewear + _NVGs + _advancedMedical + _drugs + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _miscAce + [
+		[_box, _beret + _uniforms + _vestsMedic + _headgearLight + _headgearHeavy + _facewear + _NVGs + _PJs + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _miscAce + [
+				"TFL_M9Backpack_MC",
 				"TMG_WalkMC",
-				"immersion_pops_poppack"
+				"RATS"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
@@ -152,7 +153,7 @@ case "Pointman": {
 };
 
 case "Machinegunner": {
-		[_box, _beret + _uniforms + _vestsMachineGunner + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _machineGuns + _optics + _attachments + _miscAce + [
+		[_box, _beret + _uniforms + _vestsMachineGunner + _backpacksSmall + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _machineGuns + _optics + _attachments + _miscAce + [
 				
 			],false] call ace_arsenal_fnc_initBox; 
 };

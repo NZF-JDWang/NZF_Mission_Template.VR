@@ -245,9 +245,8 @@ _backpacksSmall = [
 	"TFL_jpc_pack_mc"
 ];
 _backpacksMedic = [
-	"TFL_M9Backpack_MC",
-	"LSM_FP_01Med_MC",
-	"RATS"
+	"LSM_FP_01Med_MC"
+	
 ];
 _backpacksLarge = [
 	"pmc_MysteryASAP_mc",
@@ -501,24 +500,49 @@ _NVGs = [
 	"USP_PVS31_LOW"
 ];
 _basicMedical = [
-	"nzf_FAK",
-	"kat_CaffeineItem",
-	"kat_Pulseoximeter"
+	"nzf_FAK"
 ];
 _advancedMedical = [
-	"kat_accuvac",
 	"nzf_Medikit",
-	"kat_stethoscope",
-	"kat_Pulseoximeter"
+	"ACE_salineIV",
+	"ACE_salineIV_250",
+	"ACE_salineIV_500",
+	"vtx_stretcher_item"
 ];
-_drugs = [
-	"kat_larynx",	
-	"ACE_personalAidKit",	
-	"kat_X_AED",
-	"kat_AED",
+_PJs = [
+	"ACE_elasticBandage",
+	"ACE_packingBandage",
+	"ACE_quikclot",
+	"ACE_morphine",
+	"ACE_adenosine",
+	"ACE_epinephrine",
+	"kat_norepinephrine",
+	"kat_nitroglycerin",
+	"kat_phenylephrine",
+	"kat_PainkillerItem",
+	"kat_CarbonateItem",
+	"kat_TXA",
+	"kat_fentanyl",
 	"kat_amiodarone",
-	"kat_lidocaine",
-	"kat_phenylephrine"
+	"kat_atropine",
+	"kat_naloxone",
+	"kat_aatKit",
+	"kat_ncdKit",
+	"kat_chestSeal",
+	"kat_guedel",
+	"kat_larynx",
+	"KAT_Empty_bloodIV_250",
+	"KAT_Empty_bloodIV_500",
+	"ACE_surgicalKit",
+	"kat_IV_16",
+	"kat_IO_FAST",
+	"kat_AED",
+	"kat_X_AED",
+	"kat_stethoscope",
+	"kat_accuvac",
+	"kat_BVM",
+	"kat_Pulseoximeter",
+	"vtx_stretcher_item"
 ];
 _ammo = [
 	"X26_Cartridge_Yellow",
@@ -1237,7 +1261,6 @@ _miscAce = [
 	"ACE_Flashlight_MX991",
 	"ItemAndroid",
 	"ItemcTabHCam",
-	"ACE_IR_Strobe_Item",
 	"ACE_Flashlight_XL50",
 	"ACE_MapTools",
 	"ACE_microDAGR",
@@ -1249,7 +1272,8 @@ _miscAce = [
 	"Laserbatteries",
 	"ACRE_VHF30108SPIKE",
 	"ACRE_VHF30108MAST",
-	"nzf_headbag_inventory"
+	"nzf_headbag_inventory",
+	"kat_CaffeineItem"
 ];
 
 
