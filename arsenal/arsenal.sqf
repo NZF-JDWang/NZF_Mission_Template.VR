@@ -38,7 +38,7 @@ else {
 		if ("Command" in _playerRole) then {_role = "command"};
 		if ("Leader" in _playerRole) then {_role = "Leader"};
 		if ("JTAC" in _playerRole) then {_role = "JTAC"};
-		if ("CLS" in _playerRole) then {_role = "CLS"; 
+		if ("CLS" in _playerRole) then {_role = "CLS"}; 
 		if ("Pararescue" in _playerRole) then {_role = "Medic"; player setVariable ["Ace_medical_medicClass", 2];}; 
 		if ("Pointman" in _playerRole) then {_role = "Pointman"; player setVariable ["ACE_isEngineer", 1, true];}; 
 		if ("Machinegunner" in _playerRole) then {_role = "Machinegunner"};
