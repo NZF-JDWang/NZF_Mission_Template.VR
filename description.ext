@@ -11,7 +11,7 @@ disableChannels[] = {
 		true,	// disable text chat
 		true	// disable voice chat
 	},
-	{ 1, true, true },{ 2, true, true },{ 3, true, true },{ 4, true, true },{ 5, false, true }
+	{ 1, true, true },{ 2, true, true },{ 3, true, true },{ 4, false, true },{ 5, false, true }
 };
 //*****************************************************************************************************************
 //Mission Details
