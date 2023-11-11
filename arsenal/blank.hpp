@@ -34,7 +34,19 @@ _vestsFixedWing = [
 _backpacksSmall = [
 
 ];
+_backpacksLeader = [
+
+];
+_backpacksComms = [
+
+];
+_backpacksBreacher = [
+
+];
 _backpacksMedic = [
+
+];
+_backpacksPJ = [
 
 ];
 _backpacksLarge = [
@@ -64,7 +76,7 @@ _basicMedical = [
 _advancedMedical = [
 
 ];
-_drugs = [
+_PJs = [
 
 ];
 _ammo = [
@@ -97,11 +109,8 @@ _optics = [
 _attachments = [
 
 ];
-_blackfootWeaponsAndAmmo = [
-
-];
 _miscAce = [
-
+	
 ];
 
 

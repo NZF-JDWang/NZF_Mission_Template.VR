@@ -148,9 +148,7 @@ case "Operator": {
 		player setVariable ["ACE_isEngineer", 0, true];
 		player setUnitTrait ["explosiveSpecialist ", false];
 		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
-				"B_UavTerminal",
-				"SwitchBlade_300_Tube_Desert",
-				"SwitchBlade_600_Tube_Desert"
+
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
@@ -158,7 +156,9 @@ case "Helicopter": {
 		player setVariable ["Ace_medical_medicClass", 0];
 		player setVariable ["ACE_isEngineer", 2, true];
 		player setUnitTrait ["explosiveSpecialist ", false];
-		[_box, _beret + _uniformsHelicopter + _vestsHelicopter + _headgearHelicopters + _NVGs + _basicMedical + _ammo + _pistols + _attachments + _miscAce + [
+		[_box, _beret + _uniforms + _vestsHelicopter + _headgearHelicopters + _NVGs + _basicMedical + _ammo + _pistols + _attachments + _miscAce + [
+				"B_LegStrapBag_black_F",
+				"B_LegStrapBag_coyote_F",
 				"ACRE_PRC152",
 				"rhsusf_weap_MP7A2",
 				"rhsusf_weap_MP7A2_desert",
