@@ -60,6 +60,8 @@ Fn_IsRestrictedBoxForPlayerAccess = {
     };
 
 player addEventHandler ["InventoryOpened", Fn_IsRestrictedBoxForPlayerAccess];
+
+
 ["ace_arsenal_displayClosed",{[triggerArsenal, false] call ace_arsenal_fnc_removeBox}] call CBA_fnc_addEventHandler;
 triggerArsenal execVM "arsenal\arsenal.sqf";
 //*************************************************************************************
