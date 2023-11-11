@@ -70,7 +70,7 @@ class CfgDebriefing
 
 class NOT_PJ
 {
-	title = "This is a reserved slot.";
+	title = "This is a restricted role.";
 	description = "Only qualified PJ's can take this slot. Talk to a community manager about training for this role";
 	picture = "";
 };
