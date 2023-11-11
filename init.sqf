@@ -1,3 +1,4 @@
+enableSentences false;
 grad_civs_diagnostics_showfps = false;
 
 //Set the stretchers to be carrayable
