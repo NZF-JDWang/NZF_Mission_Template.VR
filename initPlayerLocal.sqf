@@ -58,3 +58,11 @@ _action = ["Open Arsenal","Open Arsenal","\a3\ui_f\data\IGUI\Cfg\simpleTasks\typ
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 
 //*************************************************************************************
+//Only allow PJ's to access blood crates
+
+Fn_IsRestrictedBoxForPlayerAccess = { 
+	params ["_unt", "_box"]; 
+    player getvariable "Ace_medical_medicClass" < 2 && typeOf _box == "nzf_NZBloodbox";
+    };
+
+player addEventHandler ["InventoryOpened", Fn_IsRestrictedBoxForPlayerAccess];
