@@ -18,49 +18,18 @@ _box allowDamage false;
 private "_beret";
 if (squadParams player select 0 select 0 == "NZF") then {_beret = ["nzf_beret_black_silver"]} else {_beret = [""]};
 
-//Get the players role and groupID
+private _role = player getvariable ["role", "Operator"];
+diag_log "***Arsenal Access***";
+diag_log format ["Player- %1, Role- %2", squadParams player select 1 select 1, _role];
 
-private _playerRole = roleDescription player;
-private "_role";
-
-_blackfoot = ["Blackfoot_1","Blackfoot_2","Blackfoot_3","Blackfoot_4"];
-
-if (vehicleVarName player in _blackfoot) then {
-
-	if ("Leader" in _playerRole) then {_role = "blackfootCommand"};
-	if ("Combat" in _playerRole) then {_role = "blackfootCLS"; player setVariable ["Ace_medical_medicClass", 1];}; 
-	if ("Operator" in _playerRole) then {_role = "blackfootOperator"};
-
-}
-else {
-
-		//Check players role and prepare to populate arsenal
-		if ("Command" in _playerRole) then {_role = "command"};
-		if ("Leader" in _playerRole) then {_role = "Leader"};
-		if ("JTAC" in _playerRole) then {_role = "JTAC"};
-		if ("Combat" in _playerRole) then {_role = "CLS"; player setVariable ["Ace_medical_medicClass", 1];}; 
-		if ("Pararescue" in _playerRole) then {_role = "Medic"; player setVariable ["Ace_medical_medicClass", 2];}; 
-		if ("Pointman" in _playerRole) then {_role = "Pointman"; player setVariable ["ACE_isEngineer", 1, true];}; 
-		if ("Machinegunner" in _playerRole) then {_role = "Machinegunner"};
-		if ("Marksman" in _playerRole) then {_role = "Marksman"};
-		if ("Intel" in _playerRole) then {_role = "Intel"};
-		if ("Operator" in _playerRole) then {_role = "Operator"};
-		if ("Grenadier" in _playerRole) then {_role = "Grenadier"};
-		if ("Rifleman" in _playerRole) then {_role = "Operator"};
-		if ("Helicopter" in _playerRole) then {_role = "Helicopter"}; player setVariable ["ACE_isEngineer", 2, true];
-		if ("CAS" in _playerRole) then {_role = "Pilot"}; player setVariable ["ACE_isEngineer", 2, true];
-		if ("TEST" in _playerRole) then {_role = "Operator"};
-		if ("ZEUS" in _playerRole) then {_role = "ZEUS"};
-
-};
-
-// Populate arsenal based on role 
 
 switch (_role) do {
 
-case "command": {
-		[_box, _beret + _uniforms + _vestsLeader + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce +[
-				"asip_b_01_mc",
+case "Command": {
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsLeader + _backpacksLeader + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce +[
 				"ACRE_PRC117F",
 				"ACRE_PRC152",
 				"ItemcTab",
@@ -70,8 +39,10 @@ case "command": {
 };
 
 case "Leader": {
-		[_box, _beret + _uniforms + _vestsLeader + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce + [
-				"asip_b_01_mc",
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsLeader + _backpacksLeader + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce + [
 				"ACRE_PRC152",
 				"ItemcTab",
 				"ACE_MX2A",
@@ -80,43 +51,10 @@ case "Leader": {
 };
 
 case "JTAC": {
-		[_box, _beret + _uniforms + _vestsComms + _headgearLight + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce + [
-				"USP_CRYE_AIRFRAME",
-				"USP_CRYE_AIRFRAME_CT3",
-				"USP_CRYE_AIRFRAME_VL",
-				"MICH2000_Set_G_v2_m1",
-				"MICH2000_Set_G_v2_m3",
-				"MICH2000_Set_G_v6_m1",
-				"MICH2000_Set_G_v6_m3",
-				"MICH2000_Set_G_v8_m3",
-				"MICH2000_Set_G_v8_m1",
-				"MICH2000_Set_G_v3_m3",
-				"MICH2000_Set_G_v3_m1",
-				"MICH2001_Spec_set_P_v1_e2",
-				"MICH2001_Spec_set_P_v1_e1",
-				"MICH2001_Spec_set_P_v12_e2",
-				"MICH2001_Spec_set_P_v12_e1",
-				"MICH2001_Spec_set_P_v13_e2",
-				"MICH2001_Spec_set_P_v13_e1",
-				"MICH2001_Spec_set_P_v14_e2",
-				"MICH2001_Spec_set_P_v14_e1",
-				"MICH2001_Spec_set_P_v2_e2",
-				"MICH2001_Spec_set_P_v2_e1",
-				"MICH2001_Spec_set_P_v3_e2",
-				"MICH2001_Spec_set_P_v3_e1",
-				"MICH2001_Spec_set_P_v6_e2",
-				"MICH2001_Spec_set_P_v6_e1",
-				"MICH2001_Spec_set_P_v7_e2",
-				"MICH2001_Spec_set_P_v7_e1",
-				"MICH2001_Spec_set_P_v8_e2",
-				"MICH2001_Spec_set_P_v8_e1",
-				"MICH2001_Spec_set_P_v9_e2",
-				"MICH2001_Spec_set_P_v9_e1",
-				"asip_b_01_mc",
-				"asip_a_01_mc",
-				"satcom_01",
-				"GK_117G",
-				"GK_117G_slingshot",
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsComms + _backpacksComms + _headgearLight + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce + [
 				"ACRE_PRC117F",
 				"ACRE_PRC152",
 				"ItemcTab",
@@ -125,22 +63,29 @@ case "JTAC": {
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
-case "Medic": {
-		[_box, _beret + _uniforms + _vestsMedic + _headgearLight + _headgearHeavy + _facewear + _NVGs + _PJs + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _miscAce + [
-				"TFL_M9Backpack_MC",
-				"TMG_WalkMC",
-				"RATS"
+case "PJ": {
+		player setVariable ["Ace_medical_medicClass", 2];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsMedic + _backpacksPJ + _headgearLight + _headgearHeavy + _facewear + _NVGs + _PJs + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _miscAce + [
+
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
 case "CLS": {
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
 		[_box, _beret + _uniforms + _vestsMedic + _backpacksMedic + _headgearLight + _headgearHeavy + _facewear + _NVGs + _advancedMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _miscAce + [
 
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
-case "Pointman": {
-		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
+case "Breacher": {
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 1, true];
+		player setUnitTrait ["explosiveSpecialist ", true];
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksBreacher + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
 				"121_serbu_breacher",
 				"tsp_frameCharge_mag",
 				"tsp_popperCharge_mag",
@@ -152,14 +97,20 @@ case "Pointman": {
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
-case "Machinegunner": {
+case "MachineGunner": {
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
 		[_box, _beret + _uniforms + _vestsMachineGunner + _backpacksSmall + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _machineGuns + _optics + _attachments + _miscAce + [
 				
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
 case "Marksman": {
-		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _marksmanRiflesAndScopes + _attachments + _miscAce +[
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _marksmanRiflesAndScopes + _attachments + _miscAce +[
 				"ACE_ATragMX",
 				"ACE_Kestrel4500",
 				"ACRE_PRC152",
@@ -170,7 +121,10 @@ case "Marksman": {
 };
 
 case "Intel": {
-		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
 				"B_rhsusf_B_BACKPACK",
 				"ItemcTab",
 				"Nikon_DSLR_HUD",
@@ -181,13 +135,19 @@ case "Intel": {
 };
 
 case "Grenadier": {
-		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _backpacksLarge  + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _riflesGrenadier + _optics + _attachments + _launchers + _miscAce + [
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _riflesGrenadier + _optics + _attachments + _launchers + _miscAce + [
 				
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
 case "Operator": {
-		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _backpacksLarge  + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 0, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
+		[_box, _beret + _uniforms + _vestsOperator + _backpacksSmall + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _launchers + _miscAce + [
 				"B_UavTerminal",
 				"SwitchBlade_300_Tube_Desert",
 				"SwitchBlade_600_Tube_Desert"
@@ -195,6 +155,9 @@ case "Operator": {
 };
 
 case "Helicopter": {
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 2, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
 		[_box, _beret + _uniformsHelicopter + _vestsHelicopter + _headgearHelicopters + _NVGs + _basicMedical + _ammo + _pistols + _attachments + _miscAce + [
 				"ACRE_PRC152",
 				"rhsusf_weap_MP7A2",
@@ -204,47 +167,18 @@ case "Helicopter": {
 };
 
 case "Pilot": {
+		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["ACE_isEngineer", 2, true];
+		player setUnitTrait ["explosiveSpecialist ", false];
 		[_box, _beret + _uniformsFixedWing + _headgearFixedWing + _NVGs + _basicMedical + _ammo + _pistols + _miscAce + [
 				"ACE_NonSteerableParachute"
 			],false] call ace_arsenal_fnc_initBox; 
 };
 
-case "blackfootCommand": {
-		[_box, _beret + _uniformsLowVis + _vestsLeader + _backpacksSmall + _backpacksLarge + _headgearLight + _headgearHeavy + _facewear + _NVGs + _ammo + _basicMedical + _blackfootWeaponsAndAmmo + _miscAce + [
-				"ItemcTab",
-				"Nikon_DSLR_HUD",
-				"Hate_Smartphone_HUD",
-				"sps_black_hornet_01_Static_F",
-				"ACRE_PRC117F",
-				"ACRE_PRC152",
-				"ItemcTab",
-				"Laserdesignator",
-				"ACE_MX2A",
-				"ACE_Vector",
-				"ACE_M26_Clacker",
-				"ACE_Clacker"
-			],false] call ace_arsenal_fnc_initBox; 
-};
-
-case "blackfootCLS": {
-		[_box, _beret + _uniformsLowVis + _vestsMedic + _backpacksMedic + _headgearLight + _headgearHeavy + _facewear + _NVGs + _advancedMedical + _ammo + _throwablesExplosives + _blackfootWeaponsAndAmmo + _miscAce + [
-
-			],false] call ace_arsenal_fnc_initBox; 
-};
-
-case "blackfootOperator": {
-		[_box, _beret + _uniformsLowVis + _vestsOperator + _backpacksSmall + _backpacksLarge  + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _blackfootWeaponsAndAmmo + _miscAce + [
-				"ItemcTab",
-				"Nikon_DSLR_HUD",
-				"Hate_Smartphone_HUD",
-				"B_UavTerminal",
-				"sps_black_hornet_01_Static_F",				
-				"ACE_M26_Clacker",
-				"ACE_Clacker"
-			],false] call ace_arsenal_fnc_initBox; 
-};
-
 case "ZEUS": {
+		player setVariable ["Ace_medical_medicClass", 2];
+		player setVariable ["ACE_isEngineer", 2, true];
+		player setUnitTrait ["explosiveSpecialist ", true];
 		[_box, [
 
 			],false] call ace_arsenal_fnc_initBox; 
@@ -252,5 +186,3 @@ case "ZEUS": {
 
 
 };
-
-

@@ -8,31 +8,27 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=598;
+		nextID=604;
 	};
 	class LayerIndexProvider
 	{
-		nextID=231;
+		nextID=333;
 	};
 	class Camera
 	{
-		pos[]={7589.6187,9.2789402,7470.4795};
-		dir[]={-0.099295653,-0.56381631,-0.81991822};
-		up[]={-0.067785643,0.82589865,-0.55972832};
-		aside[]={-0.99275315,2.3773464e-007,0.12022711};
+		pos[]={7596.3994,8.4000206,7471.6353};
+		dir[]={-0.2335957,-0.57525122,-0.78391266};
+		up[]={-0.16427876,0.81797683,-0.55129522};
+		aside[]={-0.95835567,-1.4901161e-008,0.28557742};
 	};
 };
 binarizationWanted=0;
-sourceName="NZF_Mission_Template";
+sourceName="NZF_Mission_Template2024";
 addons[]=
 {
-	"plp_containers",
 	"A3_Characters_F",
 	"A3_Weapons_F",
 	"ALTIMETER",
-	"USP_Gear_Body",
-	"Terror_Pack",
-	"flb_uniforms",
 	"MoePilotCoveralls",
 	"A3_Characters_F_Orange_Facewear",
 	"ace_goggles",
@@ -57,151 +53,129 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=19;
 		class Item0
-		{
-			className="plp_containers";
-			name="plp_containers";
-		};
-		class Item1
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item2
+		class Item1
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="ALTIMETER";
 			name="=ATM= Altimeter";
 			author="=ATM= Pokertour";
 			url="http://www.atmarma.fr";
 		};
-		class Item4
-		{
-			className="USP_Gear_Body";
-			name="USP Gear (Body)";
-			author="UnderSiege Productions";
-			url="https://uspmod.com/";
-		};
-		class Item5
-		{
-			className="Terror_Pack";
-			name="Terror_Pack";
-		};
-		class Item6
-		{
-			className="flb_uniforms";
-			name="flb_uniforms";
-		};
-		class Item7
+		class Item3
 		{
 			className="MoePilotCoveralls";
 			name="Moe Pilot Coveralls";
 			author="556Moe";
 		};
-		class Item8
+		class Item4
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item5
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item10
+		class Item6
 		{
 			className="Markers";
 			name="Markers";
 		};
-		class Item11
+		class Item7
 		{
 			className="A3_Characters_F_AoW";
 			name="Arma 3 Art of War - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item8
 		{
 			className="acre_sys_prc117f";
 			name="ACRE2 - AN/PRC-117F";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item13
+		class Item9
 		{
 			className="acre_sys_prc343";
 			name="ACRE2 - AN/PRC-343";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item14
+		class Item10
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item11
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item12
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item13
 		{
 			className="Tier1_BettIR_cfg";
 			name="Tier1_BettIR_cfg";
 		};
-		class Item18
+		class Item14
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item15
 		{
 			className="A3_Soft_F_Enoch";
 			name="Arma 3 Contact Platform - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item16
 		{
 			className="A3_Static_F_Jets";
 			name="Arma 3 Jets - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item17
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item22
+		class Item18
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
@@ -212,7 +186,6 @@ class AddonsMetaData
 };
 dlcs[]=
 {
-	"USP_GearUniforms",
 	"Enoch",
 	"Jets"
 };
@@ -231,7 +204,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -268,7 +241,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -28930,30 +28903,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=19;
+		items=20;
 		class Item0
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={7586.7964,5.9270878,7470.4058};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="arsenal_1";
-			};
-			id=10;
-			type="plp_ct_LockerBig";
-		};
-		class Item1
 		{
 			dataType="Layer";
 			name="TaskForce Units + Zeus";
 			class Entities
 			{
-				items=8;
+				items=7;
 				class Item0
 				{
 					dataType="Group";
@@ -28966,7 +28923,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7590.6641,5.0014391,7466.0586};
+								position[]={7594.375,5.0014391,7466.0737};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -28974,7 +28931,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Command"",true];";
 								name="Hammer10";
 								description="Commander@HAMMER 1-0";
 								isPlayable=1;
@@ -29054,7 +29011,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7590.105,5.0014391,7465.1147};
+								position[]={7593.8154,5.0014391,7465.1299};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -29062,7 +29019,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""PJ"",true];";
 								description="Pararescue (PJ)";
 								isPlayable=1;
 								class Inventory
@@ -29154,7 +29111,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7591.1719,5.0014391,7465.1797};
+								position[]={7594.8823,5.0014391,7465.1948};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -29162,7 +29119,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""JTAC"",true];";
 								description="JTAC";
 								isPlayable=1;
 								class Inventory
@@ -29254,14 +29211,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7590.7061,5.0014391,7464.436};
+								position[]={7594.4165,5.0014391,7464.4512};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-0""];" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Marksman"",true];";
 								description="Marksman";
 								isPlayable=1;
 								class Inventory
@@ -29366,7 +29323,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7588.7769,5.0014391,7466.2329};
+								position[]={7590.0469,5.0014391,7466.2656};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -29374,7 +29331,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];" \n "[this, ""TFAegis""] call BIS_fnc_setUnitInsignia;";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Leader"",true];";
 								name="Hammer11";
 								description="Squad Leader @HAMMER 1-1 ";
 								isPlayable=1;
@@ -29454,15 +29411,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7589.312,5.0014391,7465.6616};
+								position[]={7590.583,5.0014391,7465.6948};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Combat Life Saver (CLS)";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""CLS"",true];";
+								description="Operator (CLS)";
 								isPlayable=1;
 								class Inventory
 								{
@@ -29553,7 +29510,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7588.2661,5.0014391,7465.6558};
+								position[]={7589.5371,5.0014391,7465.689};
 								angles[]={0,6.2552948,0};
 							};
 							side="West";
@@ -29561,7 +29518,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Intel"",true];";
 								description="Intel Analyst";
 								isPlayable=1;
 								class Inventory
@@ -29640,14 +29597,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7588.792,5.0014391,7465.1069};
+								position[]={7590.063,5.0014391,7465.1396};
 								angles[]={0,6.2552948,0};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""MachineGunner"",true];";
 								description="Machinegunner";
 								isPlayable=1;
 								class Inventory
@@ -29752,7 +29709,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7588.814,5.0014391,7464.5068};
+								position[]={7590.084,5.0014391,7464.54};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -29760,7 +29717,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Leader"",true];";
 								description="Fire Team Leader";
 								isPlayable=1;
 								class Inventory
@@ -29839,15 +29796,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7589.3442,5.0014391,7464.0347};
+								position[]={7590.6152,5.0014391,7464.0679};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Pointman/EOD";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Breacher"",true];";
+								description="Breacher";
 								isPlayable=1;
 								class Inventory
 								{
@@ -29951,14 +29908,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7588.853,5.0014391,7463.3887};
+								position[]={7590.124,5.0014391,7463.4219};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Operator"",true];";
 								description="Operator";
 								isPlayable=1;
 								class Inventory
@@ -30037,14 +29994,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7588.3608,5.0014391,7464.085};
+								position[]={7589.6309,5.0014391,7464.1177};
 								angles[]={0,6.2552948,0};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-1""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Operator"",true];";
 								description="Operator";
 								isPlayable=1;
 								class Inventory
@@ -30144,7 +30101,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Leader"",true];";
 								name="Hammer12";
 								description="Squad Leader @HAMMER 1-2 ";
 								isPlayable=1;
@@ -30231,8 +30188,8 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Combat Life Saver  (CLS)";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""CLS"",true];";
+								description="Operator (CLS)";
 								isPlayable=1;
 								class Inventory
 								{
@@ -30331,7 +30288,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Intel"",true];";
 								description="Intel Analyst";
 								isPlayable=1;
 								class Inventory
@@ -30417,7 +30374,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""BLUE""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""MachineGunner"",true];";
 								description="Machinegunner";
 								isPlayable=1;
 								class Inventory
@@ -30530,7 +30487,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Leader"",true];";
 								description="Fire Team Leader";
 								isPlayable=1;
 								class Inventory
@@ -30616,8 +30573,8 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];";
-								description="Pointman/EOD";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Breacher"",true];";
+								description="Breacher";
 								isPlayable=1;
 								class Inventory
 								{
@@ -30728,7 +30685,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Operator"",true];";
 								description="Operator";
 								isPlayable=1;
 								class Inventory
@@ -30814,7 +30771,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];";
+								init="group this setGroupIdGlobal [""HAMMER 1-2""];" \n "this spawn {_this assignTeam ""GREEN""};" \n "this setVariable [""isSneaky"",true,true];" \n "this setVariable [""Role"",""Operator"",true];";
 								description="Operator";
 								isPlayable=1;
 								class Inventory
@@ -30900,436 +30857,6 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=4;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7584.5762,5.0014391,7466.1636};
-								angles[]={0,6.2553124,0};
-							};
-							side="West";
-							flags=7;
-							class Attributes
-							{
-								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""BLACKFOOT 1-1""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];";
-								name="Blackfoot_1";
-								description="Team Leader@BLACKFOOT 1-1";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="uni_CIV_70";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ATM_ALTIMETER";
-								};
-							};
-							id=155;
-							type="B_Soldier_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Male01ENG";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.98000002;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="nzf_insignia";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7585.043,5.0014391,7465.501};
-								angles[]={0,6.2553124,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""BLACKFOOT 1-1""];" \n "this spawn {_this assignTeam ""RED""};" \n "this setVariable [""isSneaky"",true,true];";
-								name="Blackfoot_2";
-								description="Combat Life Saver  (CLS)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="flb_Jeans_Hoodie_BoogBoy_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ATM_ALTIMETER";
-								};
-							};
-							id=156;
-							type="B_Soldier_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Male01ENG";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.98000002;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="nzf_insignia";
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								nAttributes=6;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7584.564,5.0014391,7464.98};
-								angles[]={0,6.2553124,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""BLACKFOOT 1-1""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];";
-								name="Blackfoot_3";
-								description="Operator";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="uni_CIV_69";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ATM_ALTIMETER";
-								};
-							};
-							id=157;
-							type="B_Soldier_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Male01ENG";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.98000002;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="nzf_insignia";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={7584.1328,5.0014391,7465.6016};
-								angles[]={0,6.2553124,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""BLACKFOOT 1-1""];" \n "this spawn {_this assignTeam ""YELLOW""};" \n "this setVariable [""isSneaky"",true,true];";
-								name="Blackfoot_4";
-								description="Operator";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="ButtonUp_Cargo_OD_RED_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ATM_ALTIMETER";
-								};
-							};
-							id=158;
-							type="B_Soldier_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="Male01ENG";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="SCALAR";
-											value=0.98000002;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="unitInsignia";
-									expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="nzf_insignia";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="face";
-									expression="_this setface _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="STRING";
-											value="";
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=154;
-				};
-				class Item4
-				{
-					dataType="Group";
-					side="West";
-					class Entities
-					{
 						items=2;
 						class Item0
 						{
@@ -31344,7 +30871,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""HOLLYWOOD 6-1""];" \n "";
+								init="group this setGroupIdGlobal [""HOLLYWOOD 6-1""];" \n "this setVariable [""Role"",""Helicopter"",true];" \n "";
 								description="Helicopter Pilot@HOLLYWOOD 6-1";
 								isPlayable=1;
 								class Inventory
@@ -31444,7 +30971,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HOLLYWOOD 6-1""];" \n "";
+								init="group this setGroupIdGlobal [""HOLLYWOOD 6-1""];" \n "this setVariable [""Role"",""Helicopter"",true];";
 								description="Helicopter CoPilot";
 								isPlayable=1;
 								class Inventory
@@ -31537,7 +31064,7 @@ class Mission
 					};
 					id=169;
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Group";
 					side="West";
@@ -31549,7 +31076,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7580.6743,5.0014391,7466.063};
+								position[]={7580.6738,5.0014391,7466.063};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -31557,7 +31084,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""HOLLYWOOD 6-2""];" \n "";
+								init="group this setGroupIdGlobal [""HOLLYWOOD 6-2""];" \n "this setVariable [""Role"",""Helicopter"",true];";
 								description="Helicopter Pilot@HOLLYWOOD 6-2";
 								isPlayable=1;
 								class Inventory
@@ -31649,7 +31176,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7580.7153,5.0014391,7465.2866};
+								position[]={7580.7148,5.0014391,7465.2866};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -31657,7 +31184,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="group this setGroupIdGlobal [""HOLLYWOOD 6-2""];" \n "";
+								init="group this setGroupIdGlobal [""HOLLYWOOD 6-2""];" \n "this setVariable [""Role"",""Helicopter"",true];";
 								description="Helicopter CoPilot";
 								isPlayable=1;
 								class Inventory
@@ -31750,7 +31277,7 @@ class Mission
 					};
 					id=184;
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Group";
 					side="West";
@@ -31762,7 +31289,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7578.6147,5.0014391,7466.0996};
+								position[]={7578.6152,5.0014391,7466.0996};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -31770,7 +31297,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="group this setGroupIdGlobal [""THUNDER 6-1""];" \n "";
+								init="group this setGroupIdGlobal [""THUNDER 6-1""];" \n "this setVariable [""Role"",""Pilot"",true];";
 								description="CAS Pilot@THUNDER 6-1";
 								isPlayable=1;
 								class Inventory
@@ -31863,7 +31390,7 @@ class Mission
 					};
 					id=189;
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Group";
 					side="West";
@@ -32229,7 +31756,7 @@ class Mission
 			};
 			id=94;
 		};
-		class Item2
+		class Item1
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -32309,7 +31836,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item3
+		class Item2
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -32375,7 +31902,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item4
+		class Item3
 		{
 			dataType="Object";
 			class PositionInfo
@@ -32392,7 +31919,7 @@ class Mission
 			id=221;
 			type="Land_TripodScreen_01_dual_v1_black_F";
 		};
-		class Item5
+		class Item4
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -32458,7 +31985,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item6
+		class Item5
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -32469,7 +31996,7 @@ class Mission
 			description="Copy the code in here onto anything you want to use as the spectator item";
 			id=242;
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -32479,7 +32006,7 @@ class Mission
 			title="Arsenal";
 			id=243;
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Layer";
 			name="Auto Bar Gates";
@@ -32583,7 +32110,7 @@ class Mission
 			};
 			id=257;
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Layer";
 			name="Protect Buildings";
@@ -32604,7 +32131,7 @@ class Mission
 			};
 			id=260;
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -32615,7 +32142,7 @@ class Mission
 			description="Copy the 3 items (Module, trigger and gate) and paste where you want your bargate." \n "This will hide any objects in the module area and open the gate when any player enters the trigger";
 			id=261;
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -32626,7 +32153,7 @@ class Mission
 			description="Copy the game logic and place it in your mission and any buildings within 250m will not take damage." \n "Change the 250 in the init to whatever range you like.";
 			id=262;
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Object";
 			class PositionInfo
@@ -32660,7 +32187,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Group";
 			side="West";
@@ -32712,7 +32239,7 @@ class Mission
 			};
 			id=264;
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -32733,7 +32260,7 @@ class Mission
 			id=265;
 			type="B_AAA_System_01_F";
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Object";
 			class PositionInfo
@@ -32749,7 +32276,7 @@ class Mission
 			id=267;
 			type="Box_NATO_AmmoVeh_F";
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -32762,7 +32289,7 @@ class Mission
 			id=268;
 			type="HeadlessClient_F";
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -32775,7 +32302,7 @@ class Mission
 			id=269;
 			type="HeadlessClient_F";
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -32785,6 +32312,36 @@ class Mission
 			title="Mobile CWIS (Good base defense)";
 			description="Copy and paste all 3 items, on mission start the CWIS and Ammo crate will be attached to the back of the HEMMT." \n "If you want to add more you need to change the names of truck_1, cwis_1 and crate_1 (changing the 1's for 2's etc) and then change the names in the truck init to match ." \n "The CWIS also has an Event Handler ensuring it never runs out of ammo";
 			id=270;
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7593.853,5.2600002,7470.2388};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=600;
+			type="nzf_NZBloodbox";
+		};
+		class Item19
+		{
+			dataType="Trigger";
+			position[]={7587,5,7471.0137};
+			class Attributes
+			{
+				name="triggerArsenal";
+				sizeA=1;
+				sizeB=1;
+				sizeC=2;
+				isRectangle=1;
+			};
+			id=601;
+			type="EmptyDetectorArea10x10";
 		};
 	};
 };
