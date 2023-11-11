@@ -18,7 +18,7 @@ _box allowDamage false;
 private "_beret";
 if (squadParams player select 0 select 0 == "NZF") then {_beret = ["nzf_beret_black_silver"]} else {_beret = [""]};
 
-private _role = player getvariable ["role", "Operator"];
+private _role = player getvariable ["Role", "Operator"];
 diag_log "***Arsenal Access***";
 diag_log format ["Player- %1, Role- %2", squadParams player select 1 select 1, _role];
 
