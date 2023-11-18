@@ -65,7 +65,7 @@ player addEventHandler ["InventoryOpened", Fn_IsRestrictedBoxForPlayerAccess];
 ["ace_arsenal_displayClosed",{[triggerArsenal, false] call ace_arsenal_fnc_removeBox}] call CBA_fnc_addEventHandler;
 triggerArsenal execVM "arsenal\arsenal.sqf";
 //*************************************************************************************
-//Add arsenal self interaction to players when within 10m of arsenal
+//Add arsenal self interaction to players when they are inside the arsenal trigger
 _condition = {
     _player inArea triggerArsenal;
 };
