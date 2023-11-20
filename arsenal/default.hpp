@@ -4541,7 +4541,8 @@ _miscAce = [
 	"ACRE_VHF30108SPIKE",
 	"ACRE_VHF30108MAST",
 	"nzf_headbag_inventory",
-	"kat_CaffeineItem"
+	"kat_CaffeineItem",
+	"iedd_item_notebook"
 ];
 
 

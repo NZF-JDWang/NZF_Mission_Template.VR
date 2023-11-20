@@ -95,7 +95,8 @@ switch (_role) do {
 					"tsp_stickCharge_mag",
 					"tsp_stickCharge_auto_mag",
 					"ACE_M26_Clacker",
-					"ACE_Clacker"
+					"ACE_Clacker",
+					"MineDetector"
 				],false] call ace_arsenal_fnc_initBox; 
 	};
 
