@@ -17,8 +17,6 @@ grad_civs_diagnostics_showfps = false;
     [(_this # 0 ), true, [0,1,0], 90, true] call ace_dragging_fnc_setCarryable;    
 }, nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-//objHVTRescue execvm "scripts\Hostage_setup.sqf";
-//objHVT execvm "scripts\Hvt_setup.sqf";
 
 /*
 [] spawn {while {!isnull c130b} do {

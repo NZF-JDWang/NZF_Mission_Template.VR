@@ -4,7 +4,7 @@ enableDebugConsole = 1;     	//Allows debug console for admin
 disabledAI = 1;			        //Stop AI from filling playable roles
 allowProfileGlasses = 0;        //Stops players loading in with facewear
 //*****************************************************************************************************************
-//Disable all chat channels except GLOBAL
+//Disable all chat channels except vehicle and local
 disableChannels[] = {
 	{
 		0,		// channel ID
