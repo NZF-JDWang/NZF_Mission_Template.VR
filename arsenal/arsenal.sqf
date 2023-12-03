@@ -173,7 +173,7 @@ switch (_role) do {
 			player setVariable ["Ace_medical_medicClass", 0];
 			player setVariable ["ACE_isEngineer", 2, true];
 			player setUnitTrait ["explosiveSpecialist ", false];
-			[_box, _beret + _uniformsFixedWing + _headgearFixedWing + _NVGs + _basicMedical + _ammo + _pistols + _miscAce + [
+			[_box, _beret + _uniformsFixedWing + _headgearFixedWing + _vestsFixedWing + _NVGs + _basicMedical + _ammo + _pistols + _miscAce + [
 					"ACE_NonSteerableParachute"
 				],false] call ace_arsenal_fnc_initBox; 
 	};
