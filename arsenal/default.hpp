@@ -191,7 +191,23 @@ _uniforms = [
 	"tfl_new_MCAL_rs_npr_uniform_g",
 	"tfl_new_MCAL_rs_npl_uniform",
 	"tfl_new_MCAL_rs_npl_uniform_g",
-	"tfl_new_MCAL_rs_uniform_g"
+	"tfl_new_MCAL_rs_uniform_g",
+	"tfl_rugby_aor1_uni",
+	"tfl_rugby_aor1_g_uni",
+	"tfl_rugby_aor1_np_uni",
+	"tfl_rugby_aor1_np_g_uni",
+	"tfl_rugby_cb_uni",
+	"tfl_rugby_cb_g_uni",
+	"tfl_rugby_cb_np_uni",
+	"tfl_rugby_cb_np_g_uni",
+	"tfl_rugby_mc_mcrugby_uni",
+	"tfl_rugby_mc_g_mcrugby_uni",
+	"tfl_rugby_mc_np_mcrugby_uni",
+	"tfl_rugby_mc_np_g_mcrugby_uni",
+	"tfl_rugby_mc_uni",
+	"tfl_rugby_mc_g_uni",
+	"tfl_rugby_mc_np_uni",
+	"tfl_rugby_mc_np_g_uni"
 ];
 _uniformsFixedWing = [
 	"CSU13BP_Base",
@@ -4487,7 +4503,30 @@ _attachments = [
 	"rhsusf_acc_SR25S_d",
 	"Tier1_Octane9",
 	"rhsusf_acc_rotex_mp7",
-	"rhsusf_acc_rotex_mp7_desert"
+	"rhsusf_acc_rotex_mp7_desert",
+	"FLB_556_cordurawrap_blk",
+	"FLB_556_cordurawrap_blk_V2",
+	"FLB_556_cordurawrap_tan",
+	"FLB_556_cordurawrap_tan_V2",
+	"FLB_556_cordurawrap_mc",
+	"FLB_556_cordurawrap_mc_V2",
+	"FLB_556_cordurawrap_mc_V3",
+	"FLB_556_cordurawrap_od",
+	"FLB_556_cordurawrap_od_V2",
+	"FLB_556_legionwrap_blk",
+	"FLB_556_legionwrap_blk_V2",
+	"FLB_556_legionwrap_tan",
+	"FLB_556_legionwrap_tan_V2",
+	"FLB_556_legionwrap_mc",
+	"FLB_556_legionwrap_mc_V2",
+	"FLB_556_legionwrap_mc_V3",
+	"FLB_556_legionwrap_od",
+	"FLB_556_legionwrap_od_V2",
+	"FLB_762_cordurawrap_blk",
+	"FLB_762_cordurawrap_blk2",
+	"FLB_762_cordurawrap_mc",
+	"FLB_762_cordurawrap_fde",
+	"FLB_762_cordurawrap_fde2"
 ];
 
 _blackfootWeaponsAndAmmo = [
