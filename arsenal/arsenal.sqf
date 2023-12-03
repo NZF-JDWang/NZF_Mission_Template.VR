@@ -55,13 +55,14 @@ switch (_role) do {
 			player setVariable ["Ace_medical_medicClass", 0];
 			player setVariable ["ACE_isEngineer", 0, true];
 			player setUnitTrait ["explosiveSpecialist ", false];
-			[_box, _beret + _uniforms + _vestsComms + _backpacksComms + _headgearLight + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce + [
+			[_box, _beret + _uniforms + _vestsComms + _backpacksComms + _headgearLight + _headgearHeavy + _facewear + _NVGs + _basicMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _launchers + _optics + _attachments + _miscAce + [
 					"Worm_IZLIDB",
 					"ACRE_PRC117F",
 					"ACRE_PRC152",
 					"ItemcTab",
 					"Laserdesignator",
-					"ACE_Vector"
+					"ACE_Vector",
+					
 				],false] call ace_arsenal_fnc_initBox; 
 	};
 
