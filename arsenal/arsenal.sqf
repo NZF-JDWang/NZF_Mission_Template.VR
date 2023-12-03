@@ -61,7 +61,7 @@ switch (_role) do {
 					"ACRE_PRC152",
 					"ItemcTab",
 					"Laserdesignator",
-					"ACE_Vector",
+					"ACE_Vector"
 					
 				],false] call ace_arsenal_fnc_initBox; 
 	};
