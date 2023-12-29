@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=381;
+		nextID=384;
 	};
 	class Camera
 	{
-		pos[]={7603.0713,8.3306246,7463.1362};
-		dir[]={-0.88108331,-0.34127536,0.32768017};
-		up[]={-0.31992126,0.93992841,0.11898069};
-		aside[]={0.34859863,6.6175198e-007,0.9373427};
+		pos[]={7595.2017,15.758452,7465.7661};
+		dir[]={-0.7186408,-0.58221561,0.38024783};
+		up[]={-0.51461899,0.81303358,0.27229622};
+		aside[]={0.46768925,2.3009488e-007,0.88389736};
 	};
 };
 binarizationWanted=0;
@@ -29111,7 +29111,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7594.8823,5.0014391,7465.1948};
+								position[]={7594.8818,5.0014391,7465.1948};
 								angles[]={0,6.2553124,0};
 							};
 							side="West";
@@ -31411,7 +31411,7 @@ class Mission
 							{
 								skill=1;
 								rank="COLONEL";
-								init="group this setGroupIdGlobal [""ANVIL""];";
+								init="group this setGroupIdGlobal [""ANVIL""];" \n "this setVariable [""Role"",""ZEUS"",true];";
 								name="ZEUS_1";
 								description="ZEUS@ANVIL";
 								isPlayer=1;
@@ -31586,7 +31586,7 @@ class Mission
 							{
 								skill=1;
 								rank="MAJOR";
-								init="group this setGroupIdGlobal [""ANVIL""];";
+								init="group this setGroupIdGlobal [""ANVIL""];" \n "this setVariable [""Role"",""ZEUS"",true];";
 								name="ZEUS_2";
 								description="CO-ZEUS@ANVIL";
 								isPlayable=1;
@@ -32331,7 +32331,7 @@ class Mission
 		class Item19
 		{
 			dataType="Trigger";
-			position[]={7587,5,7471.0137};
+			position[]={7587,5,7471.0142};
 			class Attributes
 			{
 				name="triggerArsenal";

@@ -2,12 +2,13 @@
 ["InitializePlayer", [player,true]] call BIS_fnc_dynamicGroups; 
 
 //Define the zeus units 
-private _gameMasters = ["ZEUS_1", "ZEUS_2"];
+private _gameMasters = ["ZEUS_1", "ZEUS_2", "TESTGUY"];
 
 //Whitelist PJ's (Use steam UID)
 private _PJs = [
                 "76561198060533591", //Old Mate 
-                "76561198089268255"  //Kev
+                "76561198089268255", //Kev
+                "76561198215981868" //Mitchell
                 ];
 
 //Setup ACE Spectator
@@ -24,10 +25,13 @@ private _defaultUniform = selectRandom [
 ];
 
 if (vehicleVarName player in _gameMasters) then {} else {player forceAddUniform _defaultUniform; removeGoggles player;};
-removeHeadgear player;
 [player, ""] call BIS_fnc_setUnitInsignia;
 //Now check if they're in the Unit and if so give them a NZF beret
-if (squadParams player select 0 select 0 == "NZF") then {player addHeadgear "nzf_beret_black_silver"} else {player addHeadgear ""};
+if (vehicleVarName player isEqualTo "TESTGUY") then {} else 
+{
+    removeHeadgear player;
+    if (squadParams player select 0 select 0 == "NZF") then {player addHeadgear "nzf_beret_black_silver"} else {player addHeadgear ""};
+};
 
 //Make players less visible to the AI 
 [] spawn NZF_fnc_camo;
@@ -36,7 +40,6 @@ if (squadParams player select 0 select 0 == "NZF") then {player addHeadgear "nzf
 if (player getVariable ["isSneaky",false]) then {
     [player] execVM "INC_undercover\Scripts\initUCR.sqf";
 };
-
 //*************************************************************************************
 //EventHandlers for respawn
 params ["_unit"];
@@ -76,3 +79,4 @@ _statement = {
 _action = ["Open Arsenal","Open Arsenal","\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\armor_ca.paa",_statement,_condition] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;
 //*************************************************************************************
+["NZF Roles", "Change Player Role", {[(_this select 1)] execVM "scripts\zeusRoleSelect.sqf"}] call zen_custom_modules_fnc_register;
