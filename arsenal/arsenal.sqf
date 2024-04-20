@@ -73,7 +73,7 @@ case "PJ": {
 };
 
 case "CLS": {
-		player setVariable ["Ace_medical_medicClass", 0];
+		player setVariable ["Ace_medical_medicClass", 1];
 		player setVariable ["ACE_isEngineer", 0, true];
 		player setUnitTrait ["explosiveSpecialist ", false];
 		[_box, _beret + _uniforms + _vestsMedic + _backpacksMedic + _headgearLight + _headgearHeavy + _facewear + _NVGs + _advancedMedical + _ammo + _throwablesExplosives + _pistols + _rifles + _optics + _attachments + _miscAce + [

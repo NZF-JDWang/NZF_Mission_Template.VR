@@ -1,8 +1,11 @@
 respawn = 3;                    //Respawn at respawn markers
 respawnOnStart = -1;	    	//Don't respawn, don't run onPlayerRespawn on start
+respawnDelay = 10;				//Set Respawn timer
 enableDebugConsole = 1;     	//Allows debug console for admin
 disabledAI = 1;			        //Stop AI from filling playable roles
 allowProfileGlasses = 0;        //Stops players loading in with facewear
+
+respawnTemplatesWest[] = {"Wave","MenuPosition"};
 //*****************************************************************************************************************
 //Disable all chat channels except vehicle and local
 disableChannels[] = {
@@ -18,13 +21,13 @@ disableChannels[] = {
 author			= "Mission Author";
 onLoadName		= "Mission Name";
 onLoadMission	= "";
-loadScreen		= "media\images\defaultMissionImage.paa";
+loadScreen		= "";
 
 //*****************************************************************************************************************
 //Corpse management 
 corpseManagerMode = 3;
 corpseRemovalMinTime = 300;
-corpseRemovalMaxTime = 1800;
+corpseRemovalMaxTime = 600;
 wreckManagerMode = 2;
 minPlayerDistance = 50;
 
@@ -67,11 +70,14 @@ class CfgRemoteExec
 //*****************************************************************************************************************
 class CfgDebriefing
 {
-
-class NOT_PJ
-{
-	title = "This is a restricted role.";
-	description = "Only qualified PJ's can take this slot. Talk to a community manager about training for this role";
-	picture = "";
+    class NOT_PJ
+    {
+        title = "This is a restricted role.";
+        description = "Only qualified PJ's can take this slot. Talk to a community manager about training for this role";
+        picture = "";
+    };
 };
+
+class Extended_PreInit_EventHandlers {
+	NZFTemplate = call compile preprocessFileLineNumbers "XEH_preInit.sqf";
 };

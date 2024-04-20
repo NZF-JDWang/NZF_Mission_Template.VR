@@ -3786,6 +3786,7 @@ _advancedMedical = [
 	"ACE_salineIV",
 	"ACE_salineIV_250",
 	"ACE_salineIV_500",
+	"ACE_suture",
 	"vtx_stretcher_item"
 ];
 _PJs = [
@@ -3821,7 +3822,8 @@ _PJs = [
 	"kat_accuvac",
 	"kat_BVM",
 	"kat_Pulseoximeter",
-	"vtx_stretcher_item"
+	"vtx_stretcher_item",
+	"ACE_suture"
 ];
 _ammo = [
 	"X26_Cartridge_Yellow",

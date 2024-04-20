@@ -5,6 +5,7 @@ class NZF
 	{
 		file = "functions\client";
 		class camo {};
+		class unconscious {};
 	};
 	class server
 	{

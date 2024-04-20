@@ -1,4 +1,10 @@
-//Initialize player groups (U - menu)
-["Initialize", [true]] call BIS_fnc_dynamicGroups;
+if (nzf_template_Groups) then {
 
-[] spawn NZF_fnc_fps;
+	//Initialize player groups (U - menu) now a CBA setting
+	["Initialize", [true]] call BIS_fnc_dynamicGroups;
+};
+
+if (nzf_template_FPSCounter) then {
+
+	[] spawn NZF_fnc_fps;
+};
