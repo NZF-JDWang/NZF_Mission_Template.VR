@@ -44,7 +44,7 @@ if (player getVariable ["isSneaky",false]) then {
     [player] execVM "INC_undercover\Scripts\initUCR.sqf";
 };
 
-if (nzf_template_unconciousMumble) then {
+if (nzf_template_unconsciousMumble) then {
     //Add mubled voices for unconcious players 
 	[player] call nzf_fnc_unconscious;
 };
